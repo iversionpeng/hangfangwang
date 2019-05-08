@@ -54,8 +54,8 @@ spring:
 
   mail:
     username: No1Code@163.com
-    host: 
-    password: 
+    host:
+    password:
     properties:
       mail:
         smtp:
@@ -64,9 +64,9 @@ spring:
             enable: true
             required: true
   oss:
-    accessKeyId: 
-    accessKeySecret: 
-    bucketName: 
+    accessKeyId:
+    accessKeySecret:
+    bucketName: lp-houses
 #md5盐
 first:
   code:
@@ -75,10 +75,4 @@ first:
 #文件保存路径
 file:
  path: G:\upload
-
-
-
-
-
-
 

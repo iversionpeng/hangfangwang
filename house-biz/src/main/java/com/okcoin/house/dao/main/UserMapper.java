@@ -3,6 +3,7 @@ package com.okcoin.house.dao.main;
 import com.okcoin.house.api.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.logging.log4j.util.MessageSupplier;
 
 import java.util.List;
 
@@ -27,4 +28,6 @@ public interface UserMapper {
     void delete(@Param("email") String email);
 
     void updateUserStatusByEmail(String email);
+
+    List<User> select(User user);
 }

@@ -97,14 +97,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(rollbackFor = Throwable.class)
-    public boolean verify(String key) {
+    public User verify(String key) {
         String email = noticService.getEmailByCache(key);
-        if (Objects.nonNull(getUserByEmail(email))) {
+        User userByEmail = getUserByEmail(email);
+        if (Objects.nonNull(userByEmail)) {
             updateUserStatus(email);
             noticService.removeEmailCache(email);
-            return true;
+            return userByEmail;
         }
-        return false;
+        return userByEmail;
     }
 
     @Override
@@ -123,6 +124,17 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteByEmail(String email) {
         userMapper.delete(email);
+    }
+
+    @Override
+    public User checkLogin(String username, String password) {
+        User user = User.builder().
+                email(username).
+                passwd(Md5Util.md5Password(password)).
+                enable(true).
+                build();
+        List<User> select = userMapper.select(user);
+        return select.isEmpty() ? null : select.get(0);
     }
 
 

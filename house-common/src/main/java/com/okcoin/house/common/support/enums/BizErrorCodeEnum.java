@@ -19,8 +19,8 @@ public enum BizErrorCodeEnum implements ErrorCode {
     EMAIL_CACHE_EXIST(602),
     PWD_NOT_SAME(700),
     PWD_INCORRECT(701),
-    KEY_INVALID(750)
-    ;
+    PARAM_BLANK(702),
+    KEY_INVALID(750);
 
     private final int code;
 

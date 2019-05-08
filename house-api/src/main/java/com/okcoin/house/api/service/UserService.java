@@ -19,11 +19,13 @@ public interface UserService {
 
     boolean insertUser(UserDto user) throws IOException, MessagingException;
 
-    boolean verify(String key);
+    User verify(String key);
 
     void updateUserStatus(String email);
 
     User getUserByEmail(String email);
 
     void deleteByEmail(String email);
+
+    User checkLogin(String username, String password);
 }
