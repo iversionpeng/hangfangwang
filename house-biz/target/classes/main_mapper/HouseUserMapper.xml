@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.okcoin.house.dao.main.HouseUserMapper">
+  <resultMap id="BaseResultMap" type="com.okcoin.house.api.domain.HouseUser">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="house_id" jdbcType="BIGINT" property="houseId" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="create_time" jdbcType="DATE" property="createTime" />
+    <result column="type" jdbcType="BIT" property="type" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, house_id, user_id, create_time, type
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from house_user
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from house_user
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.okcoin.house.api.domain.HouseUser" useGeneratedKeys="true">
+    insert into house_user (house_id, user_id, create_time, 
+      type)
+    values (#{houseId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{createTime,jdbcType=DATE}, 
+      #{type,jdbcType=BIT})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.okcoin.house.api.domain.HouseUser" useGeneratedKeys="true">
+    insert into house_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="houseId != null">
+        house_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="houseId != null">
+        #{houseId,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=DATE},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.okcoin.house.api.domain.HouseUser">
+    update house_user
+    <set>
+      <if test="houseId != null">
+        house_id = #{houseId,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=DATE},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.okcoin.house.api.domain.HouseUser">
+    update house_user
+    set house_id = #{houseId,jdbcType=BIGINT},
+      user_id = #{userId,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=DATE},
+      type = #{type,jdbcType=BIT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <cache />
+</mapper>
