@@ -1,5 +1,6 @@
 package com.okcoin.house.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -18,6 +19,10 @@ import java.util.Locale;
  */
 @Configuration
 public class I18nConfig extends WebMvcConfigurationSupport {
+    @Autowired
+    private AuthInterceptor authInterceptor;
+    @Autowired
+    private NeedLoginInterceptor needLoginInterceptor;
 
     /**
      * session区域解析器
@@ -64,11 +69,6 @@ public class I18nConfig extends WebMvcConfigurationSupport {
         return lci;
     }
 
-    @Bean
-    public NeedLoginInterceptor needLoginInterceptor() {
-        return new NeedLoginInterceptor();
-    }
-
     /**
      * excludePathPatterns 对定义url不进行拦截
      *
@@ -76,8 +76,15 @@ public class I18nConfig extends WebMvcConfigurationSupport {
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(localeChangeInterceptor()).addPathPatterns("/**").excludePathPatterns("/static/**", "/templates/**", "/static/**.ico");
-//        registry.addInterceptor(needLoginInterceptor()).addPathPatterns("/**").excludePathPatterns("/static/**", "/templates/**", "/static/**.ico");
+        registry.addInterceptor(localeChangeInterceptor()).addPathPatterns("/**").excludePathPatterns("/static/**", "/templates/**");
+        registry.addInterceptor(authInterceptor).addPathPatterns("/**").excludePathPatterns("/static/**", "/templates/error/**");
+        registry.addInterceptor(needLoginInterceptor).addPathPatterns("/accounts/changePassword").addPathPatterns("/house/toAdd")
+                .addPathPatterns("/accounts/profile").addPathPatterns("/accounts/profileSubmit")
+                .addPathPatterns("/house/bookmarked").addPathPatterns("/house/del")
+                .addPathPatterns("/house/ownlist").addPathPatterns("/house/add")
+                .addPathPatterns("/house/toAdd").addPathPatterns("/agency/agentMsg")
+                .addPathPatterns("/comment/leaveComment").addPathPatterns("/comment/leaveBlogComment");
+        super.addInterceptors(registry);
     }
 
     /**

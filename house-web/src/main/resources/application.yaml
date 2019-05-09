@@ -54,7 +54,7 @@ spring:
 
   mail:
     username: No1Code@163.com
-    host:
+    host: smtp.163.com
     password:
     properties:
       mail:
@@ -75,4 +75,3 @@ first:
 #文件保存路径
 file:
  path: G:\upload
-

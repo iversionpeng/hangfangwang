@@ -28,4 +28,6 @@ public interface UserService {
     void deleteByEmail(String email);
 
     User checkLogin(String username, String password);
+
+    void updateUserByEmail(User updateUser);
 }

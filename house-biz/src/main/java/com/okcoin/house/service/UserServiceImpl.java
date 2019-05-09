@@ -41,6 +41,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private NoticService noticService;
 
+    @Autowired
+    private OssProperties ossProperties;
+
     @Override
     public List<String> userCheck(UserDto userDto, BindingResult validationResult) {
 
@@ -74,8 +77,8 @@ public class UserServiceImpl implements UserService {
         MultipartFile avatarFile = user.getAvatarFile();
         String md5Key = fileService.uploadObject2OSS(avatarFile, user.getEmail() + "/" + FileType.IMG_FILE.getTypeName());
 //        String url = fileService.getUrl(md5Key);
-        String picUrl = "https://" + OssProperties.bucketName + "." + OssProperties.ENDPOINT +
-                "/" + OssProperties.AVATAR_FOLDER + user.getEmail() + "/" + FileType.IMG_FILE.getTypeName() + avatarFile.getOriginalFilename();
+        String picUrl = "https://" + ossProperties.getBucketName() + "." + ossProperties.getENDPOINT() +
+                "/" + ossProperties.getAVATAR_FOLDER() + user.getEmail() + "/" + FileType.IMG_FILE.getTypeName() + avatarFile.getOriginalFilename();
 
 //        List<String> filePath = fileService.getFilePath(Lists.newArrayList(avatarFile));
 //        String avator = CollectionUtils.isEmpty(filePath) ? "" : filePath.get(0);
@@ -84,7 +87,7 @@ public class UserServiceImpl implements UserService {
                 .name(user.getName())
                 .enable(false)
                 .email(user.getEmail())
-                .agencyId(Objects.isNull(user.getAgencyId()) ? 0 : user.getAgencyId())
+                .agencyId(Objects.isNull(user.getAgencyId()) ? Integer.valueOf(0) : user.getAgencyId())
                 .aboutme(Strings.isBlank(user.getAboutme()) ? "" : user.getAboutme())
                 .avatar(picUrl)
                 .createTime(new Date())
@@ -137,5 +140,8 @@ public class UserServiceImpl implements UserService {
         return select.isEmpty() ? null : select.get(0);
     }
 
-
+    @Override
+    public void updateUserByEmail(User updateUser) {
+        userMapper.updateUserByEmail(updateUser);
+    }
 }

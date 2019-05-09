@@ -30,6 +30,9 @@ public class FileService {
     @Autowired
     private OSSClient ossClient;
 
+    @Autowired
+    private OssProperties ossProperties;
+
     @Value("${file.path}")
     private String filePath;
 
@@ -37,8 +40,8 @@ public class FileService {
     /**
      * 上传图片至OSS
      *
-     * @param file       上传文件（文件全路径如：D:\\image\\cake.jpg）
-     * @param folder     模拟文件夹名 如"qj_nanjing/"
+     * @param file   上传文件（文件全路径如：D:\\image\\cake.jpg）
+     * @param folder 模拟文件夹名 如"qj_nanjing/"
      * @return String 返回的唯一MD5数字签名
      */
     public String uploadObject2OSS(File file, String folder) throws IOException {
@@ -51,7 +54,7 @@ public class FileService {
         Long fileSize = file.length();
         ObjectMetadata metadata = getObjectMetadata(is, fileName, fileSize);
         //上传文件   (上传文件流的形式)
-        PutObjectResult putResult = ossClient.putObject(OssProperties.bucketName, OssProperties.AVATAR_FOLDER + folder + fileName, is, metadata);
+        PutObjectResult putResult = ossClient.putObject(ossProperties.getBucketName(), ossProperties.getAVATAR_FOLDER() + folder + fileName, is, metadata);
         //解析结果
         resultStr = putResult.getETag();
         return resultStr;
@@ -67,7 +70,7 @@ public class FileService {
         Long fileSize = file.getSize();
         ObjectMetadata metadata = getObjectMetadata(is, fileName, fileSize);
         //上传文件   (上传文件流的形式)
-        PutObjectResult putResult = ossClient.putObject(OssProperties.bucketName, OssProperties.AVATAR_FOLDER + folder + fileName, is, metadata);
+        PutObjectResult putResult = ossClient.putObject(ossProperties.getBucketName(), ossProperties.getAVATAR_FOLDER() + folder + fileName, is, metadata);
         //解析结果
         resultStr = putResult.getETag();
         return resultStr;
@@ -203,7 +206,7 @@ public class FileService {
         // 设置URL过期时间为10年  3600l* 1000*24*365*10
         Date expiration = new Date(System.currentTimeMillis() + 3600L * 1000 * 24 * 365 * 10);
         // 生成URL
-        URL url = ossClient.generatePresignedUrl(OssProperties.bucketName, key, expiration);
+        URL url = ossClient.generatePresignedUrl(ossProperties.getBucketName(), key, expiration);
         if (url != null) {
             return url.toString();
         }

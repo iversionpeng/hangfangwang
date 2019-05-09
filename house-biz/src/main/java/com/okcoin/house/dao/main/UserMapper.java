@@ -30,4 +30,6 @@ public interface UserMapper {
     void updateUserStatusByEmail(String email);
 
     List<User> select(User user);
+
+    void updateUserByEmail(User updateUser);
 }

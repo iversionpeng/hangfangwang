@@ -7,6 +7,9 @@ import com.okcoin.house.api.domain.User;
 import com.okcoin.house.api.service.AgencyService;
 import com.okcoin.house.api.service.UserService;
 import com.okcoin.house.common.support.enums.BizErrorCodeEnum;
+import com.okcoin.house.common.support.enums.UserCommonConstants;
+import com.okcoin.house.common.support.model.SecurityUser;
+import com.okcoin.house.common.util.Md5Util;
 import com.okcoin.house.dto.UserDto;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.util.Strings;
@@ -50,10 +53,9 @@ public class AccountController {
 
     @GetMapping("/register")
     public String register(HttpServletRequest request) {
-        String errorMsg = request.getParameter("errorMsg");
         List<Agency> agencies = getAgencies();
+        agencyList.remove();
         request.setAttribute("agencyList", agencies);
-        request.setAttribute("errorMsg", errorMsg);
         return "/user/accounts/register";
     }
 
@@ -63,7 +65,6 @@ public class AccountController {
         HashMap<String, String> map = Maps.newHashMap();
         errorMsg = userService.userCheck(user, validationResult);
         if (!CollectionUtils.isEmpty(errorMsg)) {
-            errorMsg.toArray();
             StringBuilder sb = new StringBuilder();
             errorMsg.forEach(x -> sb.append(x + "</br>"));
             map.put("errorMsg", sb.toString());
@@ -90,10 +91,7 @@ public class AccountController {
     }
 
     @GetMapping("/signin")
-    public String toSignin(String username, String errorMsg, String target, HttpServletRequest request) {
-        request.setAttribute("target", target);
-        request.setAttribute("username", username);
-        request.setAttribute("errorMsg", errorMsg);
+    public String toSignin() {
         return "user/accounts/signin";
     }
 
@@ -108,8 +106,16 @@ public class AccountController {
             return "redirect:signin" + "?" + "target=" + target + "&username=" + username + "&" + asUrlParams(map);
         }
         HttpSession session = request.getSession(true);
-        user.setPasswd("");
-        session.setAttribute("loginUser", user);
+        SecurityUser securityUser = SecurityUser.builder()
+                .name(username)
+                .agencyId(user.getAgencyId())
+                .email(user.getEmail())
+                .avatar(user.getAvatar())
+                .type(user.getType())
+                .phone(user.getPhone())
+                .aboutme(user.getAboutme())
+                .build();
+        session.setAttribute(UserCommonConstants.USER_ATTRIBUTE, securityUser);
         return Strings.isBlank(target) ? "redirect:/index" : "redirect:" + target;
     }
 
@@ -118,6 +124,52 @@ public class AccountController {
         HttpSession session = request.getSession(true);
         session.invalidate();
         return "redirect:/index";
+    }
+
+
+    @GetMapping("/profile")
+    public String toProfile() {
+        return "/user/accounts/profile";
+    }
+
+    @PostMapping("/profile")
+    public String profile(HttpServletRequest req, User updateUser) {
+        HashMap<String, String> result = Maps.newHashMap();
+        userService.updateUserByEmail(updateUser);
+        User user = userService.getUserByEmail(updateUser.getEmail());
+        SecurityUser securityUser = SecurityUser.builder()
+                .name(user.getName())
+                .agencyId(user.getAgencyId())
+                .email(user.getEmail())
+                .avatar(user.getAvatar())
+                .type(user.getType())
+                .phone(user.getPhone())
+                .aboutme(user.getAboutme())
+                .build();
+        req.getSession(true).setAttribute(UserCommonConstants.USER_ATTRIBUTE, securityUser);
+        result.put("successMsg", "update success");
+        return "redirect:/accounts/profile?" + asUrlParams(result);
+    }
+
+    @PostMapping("/changePassword")
+    public String changePassword(@RequestParam("email") String email,
+                                 @RequestParam("password") String oldPwd,
+                                 @RequestParam("newPassword") String newPwd,
+                                 @RequestParam("confirmPassword") String confirmPwd) {
+        HashMap<String, String> result = Maps.newHashMap();
+        if (!StringUtils.equals(newPwd, confirmPwd)) {
+            result.put("errorMsg", BizErrorCodeEnum.PWD_NOT_SAME.getMessage());
+            return "redirect:/accounts/profile?" + asUrlParams(result);
+        }
+        User user = userService.checkLogin(email, oldPwd);
+        if (Objects.isNull(user)) {
+            result.put("errorMsg", BizErrorCodeEnum.PWD_INCORRECT.getMessage());
+            return "redirect:/accounts/profile?" + asUrlParams(result);
+        }
+        User build = User.builder().email(email).passwd(Md5Util.md5Password(newPwd)).build();
+        userService.updateUserByEmail(build);
+        result.put("successMsg", "update success");
+        return "redirect:/accounts/profile?" + asUrlParams(result);
     }
 
     private List<Agency> getAgencies() {

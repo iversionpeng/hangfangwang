@@ -27,10 +27,6 @@ public class IndexController {
     public String index(HttpServletRequest request) {
         List<HouseDto> lateHouse = houseService.getLateHouse();
         request.setAttribute("recomHouses", lateHouse);
-        String errorMsg = request.getParameter("errorMsg");
-        String successMsg = request.getParameter("successMsg");
-        request.setAttribute("errorMsg", errorMsg);
-        request.setAttribute("successMsg", successMsg);
         return "homepage/index";
     }
 
