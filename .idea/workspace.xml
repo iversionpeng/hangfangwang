@@ -4,9 +4,7 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc38feb2-eae7-42b1-95a5-d59c3b210b9a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="bc38feb2-eae7-42b1-95a5-d59c3b210b9a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/house-api/target/" />
     <ignored path="$PROJECT_DIR$/house-biz/target/" />
     <ignored path="$PROJECT_DIR$/house-common/target/" />
@@ -52,20 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
+            <state relative-caret-position="681">
               <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -188,8 +177,8 @@
         <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/util/Md5Util.java" />
         <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/i18n/LocaleUtils.java" />
         <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -575,7 +564,7 @@
       <workItem from="1557329839275" duration="3179000" />
       <workItem from="1557367591766" duration="3487000" />
       <workItem from="1557371957237" duration="14812000" />
-      <workItem from="1557396562502" duration="598000" />
+      <workItem from="1557396562502" duration="1024000" />
     </task>
     <task id="LOCAL-00001" summary="init run circumstance">
       <created>1554367054761</created>
@@ -676,7 +665,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238195000" />
+    <option name="totallyTimeSpent" value="238621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,6 +678,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="18" sideWeight="0.49924356" weight="0.66505635" />
@@ -710,10 +700,10 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32850242" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="17" sideWeight="0.4969743" visible="true" weight="0.41545895" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="17" sideWeight="0.4969743" visible="true" weight="0.1095008" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4977307" weight="0.2173913" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" x="25" y="143" width="1316" height="481" id="Terminal" order="9" sideWeight="0.49848714" type="FLOATING" visible="true" weight="0.784219" />
+      <window_info anchor="bottom" x="25" y="143" width="1316" height="481" id="Terminal" order="9" sideWeight="0.49848714" type="FLOATING" weight="0.784219" />
       <window_info content_ui="combo" x="1" y="268" width="1360" height="273" id="Project" order="0" sideWeight="0.49360615" visible="true" weight="0.24357034" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
       <window_info id="Web" order="7" side_tool="true" weight="0.32980332" />
@@ -1452,17 +1442,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        <state relative-caret-position="219">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="681">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
         </state>
       </provider>
     </entry>
