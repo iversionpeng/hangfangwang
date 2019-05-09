@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc38feb2-eae7-42b1-95a5-d59c3b210b9a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/autoconfig/FcOssClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/autoconfig/FcOssClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/autoconfig/OssProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/autoconfig/OssProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/BizErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/BizErrorCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/config/I18nConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/config/I18nConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/config/NeedLoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/config/NeedLoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages_en_US.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages_zh_CN.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/house-api/target/" />
     <ignored path="$PROJECT_DIR$/house-biz/target/" />
@@ -70,11 +52,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state relative-caret-position="474">
+              <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -197,8 +188,8 @@
         <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/util/Md5Util.java" />
         <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/i18n/LocaleUtils.java" />
         <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" />
       </list>
     </option>
   </component>
@@ -584,7 +575,7 @@
       <workItem from="1557329839275" duration="3179000" />
       <workItem from="1557367591766" duration="3487000" />
       <workItem from="1557371957237" duration="14812000" />
-      <workItem from="1557396562502" duration="335000" />
+      <workItem from="1557396562502" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="init run circumstance">
       <created>1554367054761</created>
@@ -642,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557332986193</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="signin complete">
+      <created>1557396962055</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1557396962055</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -678,7 +676,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237932000" />
+    <option name="totallyTimeSpent" value="238195000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,10 +710,10 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32850242" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="17" sideWeight="0.4969743" visible="true" weight="0.4090177" />
+      <window_info anchor="bottom" id="Version Control" order="17" sideWeight="0.4969743" visible="true" weight="0.41545895" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4977307" weight="0.2173913" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32850242" />
-      <window_info anchor="bottom" x="25" y="143" width="1316" height="481" id="Terminal" order="9" sideWeight="0.49848714" type="FLOATING" weight="0.784219" />
+      <window_info active="true" anchor="bottom" x="25" y="143" width="1316" height="481" id="Terminal" order="9" sideWeight="0.49848714" type="FLOATING" visible="true" weight="0.784219" />
       <window_info content_ui="combo" x="1" y="268" width="1360" height="273" id="Project" order="0" sideWeight="0.49360615" visible="true" weight="0.24357034" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
       <window_info id="Web" order="7" side_tool="true" weight="0.32980332" />
@@ -812,7 +810,8 @@
     <MESSAGE value="register view dev" />
     <MESSAGE value="省市联动" />
     <MESSAGE value="signin model" />
-    <option name="LAST_COMMIT_MESSAGE" value="signin model" />
+    <MESSAGE value="signin complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="signin complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1148,6 +1147,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1335,6 +1342,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1442,17 +1452,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="474">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="222">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
