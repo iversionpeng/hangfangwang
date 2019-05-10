@@ -1,5 +1,6 @@
 package com.okcoin.house.common.support.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  * @description(功能描述): 返回列表结果封装
  */
 @Data
+@Builder
 public class Pager<T> {
     /**
      * 当前页

@@ -62,33 +62,6 @@
                                             <div class="col-md-6 col-sm-6">
                                                 <section id="summary">
                                                     <header><h2>房源信息</h2></header>
-                                                <#--<div class="form-group">-->
-                                                <#--<label for="submit-location">城市</label>-->
-                                                <#--<select name="cityId" id="submit-location">-->
-                                                <#--<option value="0">选择城市</option>-->
-                                                <#--&lt;#&ndash;<#list citys as city >&ndash;&gt;-->
-                                                <#--&lt;#&ndash;<option value="${city.id}">${city.cityName}</option>&ndash;&gt;-->
-                                                <#--&lt;#&ndash;<option value="${city.id}">${city.cityName}</option>&ndash;&gt;-->
-                                                <#--<option value="1">北京</option>-->
-                                                <#--<option value="1">北京</option>-->
-                                                <#--<option value="1">北京</option>-->
-                                                <#--<option value="1">北京</option>-->
-                                                <#--<option value="1">北京</option>-->
-                                                <#--&lt;#&ndash;</#list>&ndash;&gt;-->
-                                                <#--</select>-->
-                                                <#--</div>-->
-                                                <#--<div class="form-group">-->
-                                                <#--<label for="submit-location">选择名称</label>-->
-                                                <#--<select name="communityId" id="submit-location">-->
-                                                <#--<option value="0">选择小区</option>-->
-                                                <#--&lt;#&ndash;<#list communitys as community >&ndash;&gt;-->
-                                                <#--&lt;#&ndash;<option value="${community.id}">${community.name}</option>&ndash;&gt;-->
-                                                <#--<option value="1">朝阳区</option>-->
-                                                <#--<option value="2">海淀区</option>-->
-                                                <#--<option value="3">大兴区</option>-->
-                                                <#--&lt;#&ndash;</#list>&ndash;&gt;-->
-                                                <#--</select>-->
-                                                <#--</div>-->
                                                     <div class="form-group">
                                                         <label for="submit-location">城市</label>
                                                         <select name="cityId" id="city"
@@ -430,7 +403,7 @@
                 if (Curedata != null) {
                     for (var i = 0; i < Curedata.length; i++) {
 
-                        html += "<option value='" + i + "'>" + Curedata[i]
+                        html += "<option value=" + i + ">" + Curedata[i]
                                 + "</option>";
                         html1 += "<li rel=" + (i + 1) + "><a tabindex=\"0\" class style><span class=\"text\">" + Curedata[i] + "</span><i class=\"glyphicon glyphicon-ok icon-ok check-mark\"></i></a></li>";
                     }

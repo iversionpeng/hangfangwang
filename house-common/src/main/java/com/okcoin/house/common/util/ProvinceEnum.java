@@ -62,7 +62,7 @@ public enum ProvinceEnum {
         return Arrays.stream(ProvinceEnum.values()).filter(x -> x.getProvinceCode().equals(provinceCode)).findFirst().orElseGet(null);
     }
 
-    public static Integer getCityCode(ProvinceEnum provinceEnum, String cityName) {
-      return   provinceEnum.getCityList().indexOf(cityName);
+    public static Integer getCityCode(ProvinceEnum provinceEnum, Integer cityName) {
+        return provinceEnum.getProvinceCode() * 100 + cityName;
     }
 }

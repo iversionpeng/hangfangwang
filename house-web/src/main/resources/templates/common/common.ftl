@@ -146,10 +146,10 @@
             <select name="type">
                 <option value="1">类型</option>
                 <option value="1" <#if (vo.type)?? && (vo.type)==1> selected </#if> >售卖</option>
-                <option value="2" <#if (vo.type)?? && (vo.type)==2> selected </#if> >出租</option>
+                <option value="0" <#if (vo.type)?? && (vo.type)==0> selected </#if> >出租</option>
             </select>
         </div><!-- /.form-group -->
-        <input type="text" value="${(vo.sort)!}" name=sort hidden="true">
+        <input type="text" value="${(vo.sort)!}" name="sort" hidden="true">
 
         <div class="form-group">
             <button type="submit" class="btn btn-default">搜索</button>
@@ -206,7 +206,7 @@
                      <li class="has-child"><a href="/house/list">房产</a>
                          <ul class="child-navigation">
                              <li><a href="/house/list?type=1">售房</a></li>
-                             <li><a href="/house/list?type=2">租房</a></li>
+                             <li><a href="/house/list?type=0">租房</a></li>
                          </ul>
                      </li>
                      <li class="has-child"><a href="#">经纪人</a>

@@ -14,7 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class User implements Serializable {
-    private Integer id;
+    private Long id;
 
     /**
      * 姓名

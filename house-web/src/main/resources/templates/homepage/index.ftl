@@ -75,7 +75,7 @@
                                     <select name="type">
                                         <option value="1">类型</option>
                                         <option value="1">售卖</option>
-                                        <option value="2">出租</option>
+                                        <option value="0">出租</option>
                                     </select>
                                 </div><!-- /.form-group -->
                                 <div class="form-group">

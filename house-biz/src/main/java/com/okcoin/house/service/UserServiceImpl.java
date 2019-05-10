@@ -75,10 +75,10 @@ public class UserServiceImpl implements UserService {
     public boolean insertUser(UserDto user) throws IOException, MessagingException {
         String md5Pwd = Md5Util.md5Password(user.getPasswd());
         MultipartFile avatarFile = user.getAvatarFile();
-        String md5Key = fileService.uploadObject2OSS(avatarFile, user.getEmail() + "/" + FileType.IMG_FILE.getTypeName());
+        String md5Key = fileService.uploadObject2OSS(avatarFile, user.getEmail() +  FileType.AVATAR_IMG_FILE.getTypeName());
 //        String url = fileService.getUrl(md5Key);
         String picUrl = "https://" + ossProperties.getBucketName() + "." + ossProperties.getENDPOINT() +
-                "/" + ossProperties.getAVATAR_FOLDER() + user.getEmail() + "/" + FileType.IMG_FILE.getTypeName() + avatarFile.getOriginalFilename();
+                "/" + ossProperties.getAVATAR_FOLDER() + user.getEmail() + FileType.AVATAR_IMG_FILE.getTypeName() + avatarFile.getOriginalFilename();
 
 //        List<String> filePath = fileService.getFilePath(Lists.newArrayList(avatarFile));
 //        String avator = CollectionUtils.isEmpty(filePath) ? "" : filePath.get(0);

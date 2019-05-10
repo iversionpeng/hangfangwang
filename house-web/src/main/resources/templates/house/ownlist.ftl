@@ -54,7 +54,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                 <#list ps.list as house> 
+                                 <#list ps.result as house>
                                     <tr>
                                         <td class="image">
                                             <a href="/house/detail?id=${house.id}"><img alt="" src="${house.firstImg}" style="width: 105px;height: 78px"></a>
@@ -77,7 +77,7 @@
                          </div><!-- /.table-responsive -->
                             <!-- Pagination -->
                             <div class="center">
-                                  <@common.paging ps.pagination/>
+                                  <@common.paging page/>
                             </div><!-- /.center-->
                         </div><!-- /.my-properties -->
                     </section><!-- /#my-properties -->

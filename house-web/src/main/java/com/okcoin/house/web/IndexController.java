@@ -5,29 +5,31 @@ import com.okcoin.house.dto.HouseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * @Auther: liupeng
- * @Date: 2019/4/2 18:20
- * @Description(功能描述):
+ * @author: liupeng
+ * @date: 2019/4/2 18:20
+ * @description(功能描述):
  */
 @Controller
-@RequestMapping("/index")
 public class IndexController {
 
     @Autowired
     private HouseService houseService;
 
-    @GetMapping("")
+    @GetMapping("/index")
     public String index(HttpServletRequest request) {
         List<HouseDto> lateHouse = houseService.getLateHouse();
         request.setAttribute("recomHouses", lateHouse);
         return "homepage/index";
+    }
+
+    @GetMapping("")
+    public String index() {
+        return "redirect:/index";
     }
 
 }

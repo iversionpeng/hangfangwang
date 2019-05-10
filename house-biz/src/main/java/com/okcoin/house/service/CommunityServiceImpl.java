@@ -31,7 +31,7 @@ public class CommunityServiceImpl implements CommunityService {
 
     @Override
     public List<String> getTownByProvinceCode(Integer code) {
-        List<String> result = null;
+        List<String> result;
         ProvinceEnum provinceEnum = ProvinceEnum.getProvinceEnum(code);
         result = provinceEnum == null ? null : provinceEnum.getCityList();
         return result;

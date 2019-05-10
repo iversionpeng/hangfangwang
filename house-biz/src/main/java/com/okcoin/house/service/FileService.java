@@ -15,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.*;
 import java.net.URL;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -74,6 +75,26 @@ public class FileService {
         //解析结果
         resultStr = putResult.getETag();
         return resultStr;
+    }
+
+    public List<String> uploadObject2OSS(List<MultipartFile> files, String folder) throws IOException {
+        List<String> result = Lists.newArrayList();
+        for (MultipartFile file : files) {
+            //以输入流的形式上传文件
+            InputStream is = file.getInputStream();
+            //文件名
+            String fileName = file.getOriginalFilename();
+            //文件大小
+            Long fileSize = file.getSize();
+            ObjectMetadata metadata = getObjectMetadata(is, fileName, fileSize);
+            //上传文件   (上传文件流的形式)
+            PutObjectResult putResult = ossClient.putObject(ossProperties.getBucketName(), ossProperties.getAVATAR_FOLDER() + folder + fileName, is, metadata);
+            //解析结果
+            String resultStr = putResult.getETag();
+            result.add(resultStr);
+        }
+
+        return result;
     }
 
     private ObjectMetadata getObjectMetadata(InputStream is, String fileName, Long fileSize) throws IOException {
@@ -213,7 +234,7 @@ public class FileService {
         return null;
     }
 
-    public List<String> getFilePath(List<MultipartFile> files) {
+    private List<String> getFilePath(List<MultipartFile> files) {
         List<String> paths = Lists.newArrayList();
         final File[] localFile = new File[1];
         files.stream().filter(x -> Objects.nonNull(x)).forEach(file -> {

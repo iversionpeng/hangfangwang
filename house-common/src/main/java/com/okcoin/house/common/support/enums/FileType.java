@@ -2,9 +2,12 @@ package com.okcoin.house.common.support.enums;
 
 import java.time.Instant;
 import java.util.Arrays;
+import java.util.List;
 
 public enum FileType {
-    IMG_FILE(0, "img/avatar/" + Instant.now().getEpochSecond() + "/");
+    AVATAR_IMG_FILE(0, "/img/avatar/" + Instant.now().getEpochSecond() + "/"),
+    HOUSE_IMG_FILE(1, "/img/house/" + Instant.now().getEpochSecond() + "/"),;
+
     private Integer type;
     private String typeName;
 

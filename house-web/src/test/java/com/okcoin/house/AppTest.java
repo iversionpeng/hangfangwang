@@ -50,11 +50,4 @@ public class AppTest {
         return;
     }
 
-    @Test
-    public void testOss() throws IOException {
-        File file = new File("G:\\ideaWorkSpace\\houses\\house-web\\src\\main\\resources\\banner.txt");
-        String s = fileService.uploadObject2OSS(file,"/aa");
-        System.out.print(s);
-    }
-
 }
