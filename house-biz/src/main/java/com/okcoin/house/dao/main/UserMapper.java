@@ -17,7 +17,7 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    User selectByPrimaryKey(Integer id);
+    User selectByPrimaryKey(Long id);
 
     int updateByPrimaryKeySelective(User record);
 

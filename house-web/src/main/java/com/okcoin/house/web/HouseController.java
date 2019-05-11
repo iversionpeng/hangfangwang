@@ -1,26 +1,31 @@
 package com.okcoin.house.web;
 
-import com.okcoin.house.api.domain.Community;
-import com.okcoin.house.api.domain.House;
-import com.okcoin.house.api.domain.User;
-import com.okcoin.house.api.service.CommunityService;
-import com.okcoin.house.api.service.HouseService;
-import com.okcoin.house.api.service.HouseUserService;
-import com.okcoin.house.api.service.UserService;
-import com.okcoin.house.common.support.enums.HouseSortEnum;
+import com.github.pagehelper.page.PageParams;
+import com.google.common.base.Joiner;
+import com.google.common.base.Splitter;
+import com.google.common.collect.Maps;
+import com.okcoin.house.api.domain.*;
+import com.okcoin.house.api.service.*;
+import com.okcoin.house.common.support.enums.BizErrorCodeEnum;
 import com.okcoin.house.common.support.enums.HouseStatus;
+import com.okcoin.house.common.support.enums.HouseUserType;
 import com.okcoin.house.common.support.model.*;
+import com.okcoin.house.dto.CommentDto;
 import com.okcoin.house.dto.HouseDto;
+import com.okcoin.house.dto.UserMsg;
+import com.okcoin.house.service.RecommendService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
-import java.util.List;
-import java.util.Objects;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.*;
 
 /**
  * @author: liupeng
@@ -42,6 +47,15 @@ public class HouseController {
 
     @Autowired
     private HouseUserService houseUserService;
+
+    @Autowired
+    private AgencyService agencyService;
+
+    @Autowired
+    private RecommendService recommend;
+
+    @Autowired
+    private CommentService commentService;
 
     @GetMapping("/toAdd")
     public String toHouseAdd(HttpServletRequest request) {
@@ -74,14 +88,14 @@ public class HouseController {
                             @RequestParam(value = "type", required = false) Integer type,
                             ModelMap modelMap) {
         Pager<HouseDto> result = houseService.getHouseListByQuery(pageSize, pageNum, name, type, sorting);
-        List<HouseDto> lateHouse = houseService.getLateHouse();
         HouseDto build = HouseDto.builder()
                 .name(name)
                 .sort(StringUtils.isBlank(sorting) ? "time_desc" : sorting)
                 .type(type)
                 .build();
+        List<HouseDto> hotHouse = recommend.getHotHouse(3);
         Pagination page = new Pagination(pageSize, pageNum, result.getTotal());
-        modelMap.put("recomHouses", lateHouse);
+        modelMap.put("recomHouses", hotHouse);
         modelMap.put("ps", result);
         modelMap.put("vo", build);
         modelMap.put("page", page);
@@ -94,14 +108,14 @@ public class HouseController {
                               @RequestParam(value = "type", required = false) Integer type,
                               ModelMap modelMap) {
         Pager<HouseDto> result = houseService.getHouseListByQuery(10, 1, name, type, sorting);
-        List<HouseDto> lateHouse = houseService.getLateHouse();
         HouseDto build = HouseDto.builder()
                 .name(name)
                 .sort(StringUtils.isBlank(sorting) ? "time_desc" : sorting)
                 .type(type)
                 .build();
         Pagination page = new Pagination(10, 1, result.getTotal());
-        modelMap.put("recomHouses", lateHouse);
+        List<HouseDto> hotHouse = recommend.getHotHouse(3);
+        modelMap.put("recomHouses", hotHouse);
         modelMap.put("ps", result);
         modelMap.put("vo", build);
         modelMap.put("page", page);
@@ -130,27 +144,131 @@ public class HouseController {
         modelMap.put("page", page);
         return "/house/ownlist";
     }
-//
-//    /**
-//     * 查询房屋详情
-//     * 查询关联经纪人
-//     *
-//     * @param id
-//     * @return
-//     */
-//    @RequestMapping("house/detail")
-//    public String houseDetail(Long id, ModelMap modelMap) {
-//        House house = houseService.queryOneHouse(id);
-//        HouseUser houseUser = houseService.getHouseUser(id);
-//        recommendService.increase(id);
-//        List<Comment> comments = commentService.getHouseComments(id, 8);
-//        if (houseUser.getUserId() != null && !houseUser.getUserId().equals(0)) {
-//            modelMap.put("agent", agencyService.getAgentDeail(houseUser.getUserId()));
-//        }
-//        List<House> rcHouses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
-//        modelMap.put("recomHouses", rcHouses);
-//        modelMap.put("house", house);
-//        modelMap.put("commentList", comments);
-//        return "/house/detail";
-//    }
+
+    /**
+     * 查询房屋详情
+     * 查询关联经纪人
+     *
+     * @param id
+     * @return
+     */
+    @GetMapping("/detail")
+    public String houseDetail(@RequestParam("id") Long id, ModelMap modelMap) {
+        House house = houseService.queryOneHouse(id);
+        if (Objects.isNull(house)) {
+            return "error/404";
+        }
+        recommend.increase(id);
+        HouseUser houseUser = houseUserService.getHouseUser(id);
+        List<String> imgs = Splitter.on(",").splitToList(house.getImage());
+        List<String> floorImgs = Splitter.on(",").splitToList(house.getFloorPlan());
+        List<String> featureList = Splitter.on(",").splitToList(house.getProperties());
+        HouseDto houseDto = HouseDto.builder()
+                .id(house.getId())
+                .address(house.getAddress())
+                .area(house.getArea())
+                .baths(house.getBaths())
+                .beds(house.getBeds())
+                .firstImg(house.getImage().split(",")[0])
+                .name(house.getName())
+                .price(house.getPrice())
+                .typeStr(house.getType() ? "直售" : "出租")
+                .remarks(house.getRemarks())
+                .imageList(imgs)
+                .state(house.getState() ? 1 : 0)
+                .featureList(featureList)
+                .floorPlanList(floorImgs)
+                .rating(house.getRating())
+                .userId(houseUser.getUserId())
+                .build();
+        List<CommentDto> comments = commentService.getHouseComments(id, 8);
+        if (houseUser.getUserId() != null && !houseUser.getUserId().equals(0)) {
+            modelMap.put("agent", agencyService.getAgentDeail(houseUser.getUserId()));
+        }
+        List<HouseDto> hotHouse = recommend.getHotHouse(3);
+        modelMap.put("recomHouses", hotHouse);
+        modelMap.put("house", houseDto);
+        modelMap.put("commentList", comments);
+        return "/house/detail";
+    }
+
+    @PostMapping("/leaveMsg")
+    public String houseMsg(UserMsg userMsg) throws IOException, MessagingException {
+        Map<String, String> result = Maps.newHashMap();
+        userMsg.setCreateTime(new Date());
+        houseService.addUserMsg(userMsg);
+        result.put("successMsg", "留言成功");
+        return "redirect:/house/detail?id=" + userMsg.getHouseId() + "&" + asUrlParams(result);
+    }
+
+    //1.评分
+    @ResponseBody
+    @GetMapping("/rating")
+    public ResponseResult houseRate(@RequestParam("rating") Double rating, @RequestParam("id") Long id) {
+        SecurityUser userHolder = UserContext.getUserHolder();
+        if (Objects.isNull(userHolder)) {
+            return ResponseResult.failed(BizErrorCodeEnum.NOT_LOGIN);
+        }
+        houseService.updateRating(id, rating);
+        return ResponseResult.success();
+    }
+
+
+    /**
+     * 2.收藏
+     */
+    @ResponseBody
+    @PostMapping("/bookmark")
+    public ResponseResult bookmark(Long id) {
+        SecurityUser userHolder = UserContext.getUserHolder();
+        houseService.bindUser2House(id, userHolder.getUseId(), true);
+        return ResponseResult.success();
+    }
+
+    /**
+     * 3.删除收藏
+     */
+    @ResponseBody
+    @PostMapping("/unbookmark")
+    public ResponseResult unbookmark(@RequestParam("id") Long id) {
+        SecurityUser userHolder = UserContext.getUserHolder();
+        houseService.unbindUser2House(id, userHolder.getUseId(), HouseUserType.BOOKMARK);
+        return ResponseResult.success();
+    }
+
+    @GetMapping(value = "/del")
+    public String delsale(@RequestParam("id") Long id,@RequestParam("pageType") String pageType) {
+        SecurityUser userHolder = UserContext.getUserHolder();
+        houseService.unbindUser2House(id, userHolder.getUseId(), pageType.equals("own") ? HouseUserType.SALE : HouseUserType.BOOKMARK);
+        return "redirect:/house/ownlist";
+    }
+
+    //4.收藏列表
+    @GetMapping("/bookmarked")
+    public String bookmarked(@RequestParam(value = "pageNum", required = false, defaultValue = "1") Integer pageNum,
+                             @RequestParam(value = "pageSize", required = false, defaultValue = "10") Integer pageSize,
+                             ModelMap modelMap) {
+        SecurityUser userHolder = UserContext.getUserHolder();
+        HouseDto houseDto = HouseDto.builder().Bookmarked(true).userId(userHolder.getUseId()).build();
+        Pager<HouseDto> houseDtoPager = houseService.queryHouse(houseDto, pageNum, pageSize);
+        Pagination pagination = new Pagination(pageSize, pageNum, houseDtoPager.getTotal());
+        modelMap.put("ps", houseDtoPager);
+        modelMap.put("pageType", "book");
+        modelMap.put("page", pagination);
+        return "/house/ownlist";
+    }
+
+    private String asUrlParams(Map<String, String> map) {
+
+        HashMap<String, String> newHashMap = Maps.newHashMap();
+        map.forEach((k, v) -> {
+            if (v != null) {
+                try {
+                    newHashMap.put(k, URLEncoder.encode(v, "utf-8"));
+                } catch (UnsupportedEncodingException e) {
+                }
+            }
+        });
+        return Joiner.on("&").useForNull("").withKeyValueSeparator("=").join(newHashMap);
+    }
 }

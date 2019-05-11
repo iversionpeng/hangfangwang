@@ -5,7 +5,7 @@
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="tags" jdbcType="VARCHAR" property="tags" />
     <result column="content" jdbcType="VARCHAR" property="content" />
-    <result column="create_time" jdbcType="DATE" property="createTime" />
+    <result column="create_time"  property="createTime" />
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="cat" jdbcType="INTEGER" property="cat" />
   </resultMap>

@@ -15,6 +15,11 @@ import java.io.Serializable;
 public class SecurityUser implements Serializable {
 
     /**
+     * 用户id
+     */
+    private Long useId;
+
+    /**
      * 姓名
      */
     private String name;

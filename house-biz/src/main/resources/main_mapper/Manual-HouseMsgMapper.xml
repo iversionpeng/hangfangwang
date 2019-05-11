@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.okcoin.house.dao.main.HouseMsgMapper">
+  <insert id="insertUserMsg">
+     insert into house_msg (
+                     msg,
+                     create_time,
+                     user_name,
+                     house_id,
+                     agent_id
+                     )
+                     value(
+                      #{msg},
+                      #{createTime},
+                      #{userName},
+                      #{houseId},
+                      #{agentId}
+                     )
+    </insert>
+</mapper>

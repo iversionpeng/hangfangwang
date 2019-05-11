@@ -1,8 +1,8 @@
 package com.okcoin.house.common.support.enums;
 
 public enum HouseUserType {
-    BOOKMARK(0),
-    SALE(1),;
+    BOOKMARK(1),
+    SALE(0),;
     private Integer type;
 
     HouseUserType(Integer type) {

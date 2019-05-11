@@ -78,12 +78,15 @@ public class I18nConfig extends WebMvcConfigurationSupport {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localeChangeInterceptor()).addPathPatterns("/**").excludePathPatterns("/static/**", "/templates/**");
         registry.addInterceptor(authInterceptor).addPathPatterns("/**").excludePathPatterns("/static/**", "/templates/error/**");
-        registry.addInterceptor(needLoginInterceptor).addPathPatterns("/accounts/changePassword").addPathPatterns("/house/toAdd")
-                .addPathPatterns("/accounts/profile").addPathPatterns("/accounts/profileSubmit")
+        registry.addInterceptor(needLoginInterceptor).addPathPatterns("/accounts/changePassword")
+                .addPathPatterns("/house/toAdd").addPathPatterns("/accounts/profile")
+                .addPathPatterns("/accounts/profileSubmit")
                 .addPathPatterns("/house/bookmarked").addPathPatterns("/house/del")
                 .addPathPatterns("/house/ownlist").addPathPatterns("/house/add")
-                .addPathPatterns("/house/toAdd").addPathPatterns("/agency/agentMsg")
-                .addPathPatterns("/comment/leaveComment").addPathPatterns("/comment/leaveBlogComment");
+                .addPathPatterns("/house/toAdd")
+                .addPathPatterns("/agency/agentMsg").addPathPatterns("/agency/create")
+                .addPathPatterns("/agency/submit").addPathPatterns("/comment/leaveComment")
+                .addPathPatterns("/comment/leaveBlogComment");
         super.addInterceptors(registry);
     }
 

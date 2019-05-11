@@ -107,6 +107,7 @@ public class AccountController {
         }
         HttpSession session = request.getSession(true);
         SecurityUser securityUser = SecurityUser.builder()
+                .useId(user.getId())
                 .name(username)
                 .agencyId(user.getAgencyId())
                 .email(user.getEmail())
@@ -181,7 +182,7 @@ public class AccountController {
         return agencies;
     }
 
-    private static String asUrlParams(Map<String, String> map) {
+    private String asUrlParams(Map<String, String> map) {
 
         HashMap<String, String> newHashMap = Maps.newHashMap();
         map.forEach((k, v) -> {

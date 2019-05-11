@@ -69,11 +69,16 @@ public class NoticService {
                     }).build();
 
     @Async
-    public void sendMsg(String subject, String name, String email, Map<String, String> params) throws MessagingException, IOException {
+    public void sendRegisterNotice(String subject, String name, String email, Map<String, String> params) throws MessagingException, IOException {
         String randomKey = RandomStringUtils.randomAlphabetic(10);
         registerCache.put(randomKey, email);
         String url = "http://" + domainName + "/accounts/verify?key=" + randomKey;
-        sendMail(subject, url, email, name);
+        sendMail(subject, email, buildContent(url, name));
+    }
+
+    @Async
+    public void sendConsultNotice(String subject, String name, String email, Map<String, String> params) throws MessagingException, IOException {
+        sendMail(subject, email, buildContent(params, name));
     }
 
     public Boolean emailIsExist(String email) {
@@ -89,13 +94,13 @@ public class NoticService {
         return registerCache.getIfPresent(key);
     }
 
-    private void sendMail(String subject, String url, String email, String name) throws MessagingException, IOException {
+    private void sendMail(String subject, String email, String text) throws MessagingException, IOException {
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "utf-8");
         helper.setFrom(from);
         helper.setSubject(subject);
         helper.setTo(email);
-        helper.setText(buildContent(url, name), true);
+        helper.setText(text, true);
         String alarmIconName = "static/favicon.ico";
         ClassPathResource img = new ClassPathResource(alarmIconName);
         if (java.util.Objects.nonNull(img)) {
@@ -124,6 +129,34 @@ public class NoticService {
         String date = DateFormatUtils.format(new Date(), "yyyy/MM/dd HH:mm:ss");
         //填充html模板中的五个参数
         String htmlText = MessageFormat.format(buffer.toString(), emailHeadColor, name, contentText, date);
+
+        //改变表格样式
+        htmlText = htmlText.replaceAll("<td>", "<td style=\"padding:6px 10px; line-height: 150%;\">");
+        htmlText = htmlText.replaceAll("<tr>", "<tr style=\"border-bottom: 1px solid #eee; color:#666;\">");
+        return htmlText;
+    }
+
+    private String buildContent(Map<String, String> params, String name) throws IOException {
+
+        //加载邮件html模板
+        String fileName = "static/consult-email-template.html";
+        InputStream inputStream = ClassLoader.getSystemResourceAsStream(fileName);
+        BufferedReader fileReader = new BufferedReader(new InputStreamReader(inputStream));
+        StringBuffer buffer = new StringBuffer();
+        String line;
+        while ((line = fileReader.readLine()) != null) {
+            buffer.append(line);
+        }
+        inputStream.close();
+        fileReader.close();
+        String contentText = params.get("msg");
+        String contentTextVar = params.get("email");
+        //邮件表格header
+        //绿色
+        String emailHeadColor = "#fa9c10";
+        String date = DateFormatUtils.format(new Date(), "yyyy/MM/dd HH:mm:ss");
+        //填充html模板中的参数
+        String htmlText = MessageFormat.format(buffer.toString(), emailHeadColor, name, contentText, contentTextVar, date);
 
         //改变表格样式
         htmlText = htmlText.replaceAll("<td>", "<td style=\"padding:6px 10px; line-height: 150%;\">");

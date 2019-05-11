@@ -1,6 +1,8 @@
 package com.okcoin.house.dao.main;
 
 import com.okcoin.house.api.domain.Agency;
+import com.okcoin.house.api.domain.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -21,4 +23,5 @@ public interface AgencyMapper {
     int updateByPrimaryKey(Agency record);
 
     List<Agency> select();
+
 }

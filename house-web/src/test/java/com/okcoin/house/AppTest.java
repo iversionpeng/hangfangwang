@@ -3,16 +3,16 @@ package com.okcoin.house;
 import com.okcoin.house.common.support.enums.BizErrorCodeEnum;
 import com.okcoin.house.common.support.i18n.LocaleUtils;
 import com.okcoin.house.service.FileService;
+import com.okcoin.house.service.RecommendService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
@@ -31,6 +31,11 @@ public class AppTest {
 
     @Autowired
     private FileService fileService;
+    @Autowired
+    private RecommendService recommend;
+
+    @Autowired
+    private StringRedisTemplate redisTemplate;
 
     @Test
     public void testI18n() {
@@ -48,6 +53,13 @@ public class AppTest {
         List<Locale> localesFromHeader = io.undertow.util.LocaleUtils.getLocalesFromHeader("zh-CN");
         Locale locale = localesFromHeader.get(0);
         return;
+    }
+    @Test
+    public void testRedis() {
+        recommend.increase(3L);
+//        BoundZSetOperations<String, String> jedis = redisTemplate.boundZSetOps("hot_house");
+//        jedis.incrementScore(""+1,1.0);
+
     }
 
 }

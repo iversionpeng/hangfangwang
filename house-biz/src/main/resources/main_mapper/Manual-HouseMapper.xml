@@ -4,7 +4,9 @@
     <select id="getLateHouse" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
-        from house order by create_time desc limit 15
+        from house
+        where state =1
+        order by create_time desc limit 12
     </select>
     <sql id="houseCondition">
         <if test="house.userId != null and house.userId != 0">
@@ -12,7 +14,8 @@
             <where>
                 user_id = #{house.userId}
                 <if test="house.bookmarked != null and house.bookmarked == true">
-                    and type = 1                </if>
+                    and type = 1
+                </if>
                 <if test="house.bookmarked != null and house.bookmarked == false">
                     and type =0
                 </if>
@@ -61,21 +64,15 @@
     </select>
 
     <select id="selectPageHouses" resultMap="BaseResultMap">
-        select <include refid="Base_Column_List" />
+        select
+        <include refid="Base_Column_List"/>
         from house a
         <include refid="houseCondition"></include>
     </select>
-
-    <update id="updateHouse">
-      update house
-      set  rating = #{rating}
-      where id = #{id}
-   </update>
-
-    <update id="downHouse">
-      update house
-      set    state = 2
-      where  id = #{id}
-    </update>
-
+    <select id="selectByHouseId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from house
+        where id = #{id,jdbcType=BIGINT} and state = 1
+    </select>
 </mapper>

@@ -75,6 +75,10 @@ public class HouseDto implements Serializable {
      * 卫生间数量
      */
     private Integer baths;
+    /**
+     * 评级
+     */
+    private Double rating;
 
     /**
      * 房产地址
@@ -99,14 +103,14 @@ public class HouseDto implements Serializable {
      */
     private String firstImg;
 
-    private List<String> imgs;
-    private List<String> floorImgs;
+    private List<String> imageList;
+    private List<String> floorPlanList;
 
     private String sort;
     private Long userId;
     private Boolean Bookmarked;
     private Integer communityId;
-    private List<Integer> ids;
+    private List<Long> ids;
 
 
     private static final long serialVersionUID = 1L;

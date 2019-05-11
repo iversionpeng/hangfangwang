@@ -2,6 +2,7 @@ package com.okcoin.house.dao.main;
 
 import com.okcoin.house.api.domain.House;
 import com.okcoin.house.dto.HouseDto;
+import com.okcoin.house.dto.UserMsg;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
@@ -29,4 +30,5 @@ public interface HouseMapper {
 
     List<House> selectPageHouses(@Param("house") HouseDto houseDto);
 
+    House selectByHouseId(Long id);
 }

@@ -142,7 +142,7 @@
                                                 </div><!-- /.form-group -->
                                             </div><!-- /.col-md-6 -->
                                         </div><!-- /.row -->
-                                        <input type="hidden" name="id" value="${agent.id!}">
+                                        <input type="hidden" name="id" value="${agent.id}">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
@@ -177,7 +177,7 @@
                                     <select name="type">
                                         <option value="1" >类型</option>
                                         <option value="1" <#if (vo.type)?? && (vo.type)==1> selected </#if> >售卖</option>
-                                        <option value="2" <#if (vo.type)?? && (vo.type)==2> selected </#if> >出租</option>
+                                        <option value="0" <#if (vo.type)?? && (vo.type)==0> selected </#if> >出租</option>
                                     </select>
                                 </div><!-- /.form-group -->
                                 <input type="text" value="${(vo.sort)!}" name=sort hidden="true">

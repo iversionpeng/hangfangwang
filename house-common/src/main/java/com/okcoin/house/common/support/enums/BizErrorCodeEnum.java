@@ -21,7 +21,8 @@ public enum BizErrorCodeEnum implements ErrorCode {
     PWD_INCORRECT(701),
     PARAM_BLANK(702),
     NOT_LOGIN(703),
-    KEY_INVALID(750);
+    KEY_INVALID(750),
+    NO_PERMISSION(800);
 
     private final int code;
 

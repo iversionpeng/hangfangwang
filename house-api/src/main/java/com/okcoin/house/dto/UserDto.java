@@ -26,6 +26,8 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class UserDto implements Serializable {
+
+    private Long id;
     /**
      * 姓名
      */
@@ -80,6 +82,10 @@ public class UserDto implements Serializable {
      * 所属经济机构
      */
     private Integer agencyId;
+    /**
+     * 所属经济机构
+     */
+    private String agencyName;
 
     /**
      * 激活码

@@ -1,6 +1,7 @@
 package com.okcoin.house.api.service;
 
 import com.okcoin.house.api.domain.User;
+import com.okcoin.house.common.support.model.Pager;
 import com.okcoin.house.dto.UserDto;
 import org.springframework.validation.BindingResult;
 
@@ -30,4 +31,10 @@ public interface UserService {
     User checkLogin(String username, String password);
 
     void updateUserByEmail(User updateUser);
+
+    User selectAgencyUserByUserId(Long userId, boolean type);
+
+    Pager<UserDto> getAllAgent(Integer pageNum, Integer pageSize);
+
+    User getUserByUserId(Long userId);
 }

@@ -9,4 +9,14 @@
         and house_id = #{houseId}
         and type = #{type}
     </select>
+    <select id="selectHouseUserByHouseId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from house_user
+        where house_id = #{houseId}
+    </select>
+    <delete id="deleteHouseUser">
+      delete from house_user
+      where  house_id = #{houseId} and user_id = #{userId} and type=#{type}
+    </delete>
 </mapper>

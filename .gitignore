@@ -13,6 +13,7 @@
 # Package Files #
 *.jar
 target/
+test/
 *.war
 *.nar
 *.ear

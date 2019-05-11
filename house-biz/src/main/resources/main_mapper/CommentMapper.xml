@@ -5,7 +5,7 @@
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="content" jdbcType="VARCHAR" property="content" />
     <result column="house_id" jdbcType="BIGINT" property="houseId" />
-    <result column="create_time" jdbcType="DATE" property="createTime" />
+    <result column="create_time"  property="createTime" />
     <result column="blog_id" jdbcType="INTEGER" property="blogId" />
     <result column="type" jdbcType="BIT" property="type" />
     <result column="user_id" jdbcType="BIGINT" property="userId" />

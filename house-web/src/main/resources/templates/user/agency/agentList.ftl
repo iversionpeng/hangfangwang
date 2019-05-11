@@ -27,7 +27,7 @@
                     <section id="agents-listing">
                         <header><h1>经纪人列表</h1></header>
                         <div class="row">
-                          <#list ps.list as agent>
+                          <#list ps.result as agent>
                             <div class="col-md-12 col-lg-6" >
                                 <div class="agent">
                                     <a href="/agency/agentDeatil?id=${agent.id!}" class="agent-image"><img alt="" src="${(agent.avatar)!}"></a>
@@ -54,7 +54,7 @@
                     </section><!-- /#agents-listing -->
                     <!-- Pagination -->
                     <div class="center">
-                        <@common.paging ps.pagination/>
+                        <@common.paging pager/>
                     </div><!-- /.center-->
                 </div><!-- /.col-md-9 -->
                 <!-- end Agent Detail -->

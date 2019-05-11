@@ -1,11 +1,14 @@
 package com.okcoin.house.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.okcoin.house.api.domain.User;
 import com.okcoin.house.api.service.UserService;
 import com.okcoin.house.common.autoconfig.OssProperties;
 import com.okcoin.house.common.support.enums.BizErrorCodeEnum;
 import com.okcoin.house.common.support.enums.FileType;
 import com.okcoin.house.common.support.enums.NoticeType;
+import com.okcoin.house.common.support.model.Pager;
 import com.okcoin.house.common.util.Md5Util;
 import com.okcoin.house.dao.main.UserMapper;
 import com.okcoin.house.dto.UserDto;
@@ -75,7 +78,7 @@ public class UserServiceImpl implements UserService {
     public boolean insertUser(UserDto user) throws IOException, MessagingException {
         String md5Pwd = Md5Util.md5Password(user.getPasswd());
         MultipartFile avatarFile = user.getAvatarFile();
-        String md5Key = fileService.uploadObject2OSS(avatarFile, user.getEmail() +  FileType.AVATAR_IMG_FILE.getTypeName());
+        String md5Key = fileService.uploadObject2OSS(avatarFile, user.getEmail() + FileType.AVATAR_IMG_FILE.getTypeName());
 //        String url = fileService.getUrl(md5Key);
         String picUrl = "https://" + ossProperties.getBucketName() + "." + ossProperties.getENDPOINT() +
                 "/" + ossProperties.getAVATAR_FOLDER() + user.getEmail() + FileType.AVATAR_IMG_FILE.getTypeName() + avatarFile.getOriginalFilename();
@@ -94,7 +97,7 @@ public class UserServiceImpl implements UserService {
                 .phone(user.getPhone())
                 .type(user.getType())
                 .build());
-        noticService.sendMsg(NoticeType.REGISTER_NOTICE.getMessage(), user.getName(), user.getEmail(), null);
+        noticService.sendRegisterNotice(NoticeType.REGISTER_NOTICE.getMessage(), user.getName(), user.getEmail(), null);
         return true;
     }
 
@@ -143,5 +146,33 @@ public class UserServiceImpl implements UserService {
     @Override
     public void updateUserByEmail(User updateUser) {
         userMapper.updateUserByEmail(updateUser);
+    }
+
+    @Override
+    public User selectAgencyUserByUserId(Long userId, boolean type) {
+        User build = User.builder().id(userId).type(type).build();
+        List<User> select = userMapper.select(build);
+        return CollectionUtils.isEmpty(select) ? null : select.get(0);
+    }
+
+    @Override
+    public Pager<UserDto> getAllAgent(Integer pageNum, Integer pageSize) {
+        User user = User.builder().type(true).enable(true).build();
+        PageInfo<User> result = PageHelper.startPage(pageNum, pageSize).doSelectPageInfo(() -> userMapper.select(user));
+        List<UserDto> collect = result.getList().stream().map(x ->
+                UserDto.builder()
+                        .id(x.getId())
+                        .avatar(x.getAvatar())
+                        .name(x.getName())
+                        .phone(x.getPhone())
+                        .email(x.getEmail())
+                        .build()
+        ).collect(Collectors.toList());
+        return new Pager<>(pageNum, pageSize, result.getTotal(), collect);
+    }
+
+    @Override
+    public User getUserByUserId(Long userId) {
+        return userMapper.selectByPrimaryKey(userId);
     }
 }
