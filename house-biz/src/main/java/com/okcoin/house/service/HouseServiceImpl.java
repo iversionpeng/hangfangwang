@@ -86,7 +86,8 @@ public class HouseServiceImpl implements HouseService {
     @Override
     public Pager<HouseDto> getHouseListByQuery(Integer pageSize, Integer pageNum, String name, Integer type, String sorting) {
         HouseSortEnum byValue = HouseSortEnum.getByType(sorting);
-        PageInfo<House> re = PageHelper.startPage(pageNum, pageSize, byValue.getSort()).doSelectPageInfo(() -> houseMapper.selectByNameType(name, type));
+        PageInfo<House> re = PageHelper.startPage(pageNum, pageSize, byValue.getSort())
+                .doSelectPageInfo(() -> houseMapper.selectByNameType(name, type));
         List<House> list = re.getList();
         List<HouseDto> dtos = list.stream().map(x -> HouseDto.builder()
                 .id(x.getId())

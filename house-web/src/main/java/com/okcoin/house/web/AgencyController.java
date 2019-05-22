@@ -16,6 +16,7 @@ import com.okcoin.house.common.support.model.UserContext;
 import com.okcoin.house.dto.HouseDto;
 import com.okcoin.house.dto.UserDto;
 import com.okcoin.house.service.NoticService;
+import com.okcoin.house.service.RecommendService;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -56,6 +57,9 @@ public class AgencyController {
     @Autowired
     private NoticService noticService;
 
+    @Autowired
+    private RecommendService recommendService;
+
     @GetMapping("/create")
     public String agencyCreate() {
         SecurityUser userHolder = UserContext.getUserHolder();
@@ -86,9 +90,9 @@ public class AgencyController {
                             @RequestParam(value = "pageNum", required = false, defaultValue = "1") Integer pageNum,
                             ModelMap modelMap) {
         Pager<UserDto> re = userService.getAllAgent(pageNum, pageSize);
-        List<HouseDto> lateHouse = houseService.getLateHouse();
         Pagination pagination = new Pagination(pageSize, pageNum, re.getTotal());
-        modelMap.put("recomHouses", lateHouse);
+        List<HouseDto> hotHouse = recommendService.getHotHouse(3);
+        modelMap.put("recomHouses", hotHouse);
         modelMap.put("ps", re);
         modelMap.put("pager", pagination);
         return "/user/agent/agentList";

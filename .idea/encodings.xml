@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/house-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/house-admin/eurake-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/house-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/house-biz" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/house-common" charset="UTF-8" />

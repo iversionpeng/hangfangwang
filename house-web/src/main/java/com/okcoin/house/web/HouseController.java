@@ -59,11 +59,17 @@ public class HouseController {
 
     @GetMapping("/toAdd")
     public String toHouseAdd(HttpServletRequest request) {
+        SecurityUser userHolder = UserContext.getUserHolder();
+        if (!userHolder.getType()) {
+            String target = request.getParameter("target");
+            HashMap<String, String> result = Maps.newHashMap();
+            result.put("errorMsg", BizErrorCodeEnum.NO_PERMISSION.getMessage());
+            return "redirect:/index?" + asUrlParams(result);
+        }
         List<Community> es = communityService.provinceList();
         request.setAttribute("provinceList", es);
         return "/house/add";
     }
-
 
     @GetMapping("/provinceType")
     @ResponseBody
@@ -87,14 +93,18 @@ public class HouseController {
                             @RequestParam(value = "name", required = false) String name,
                             @RequestParam(value = "type", required = false) Integer type,
                             ModelMap modelMap) {
+        //小区搜索
+
+        //房产名模糊搜索
+        //列表规则排序
         Pager<HouseDto> result = houseService.getHouseListByQuery(pageSize, pageNum, name, type, sorting);
         HouseDto build = HouseDto.builder()
                 .name(name)
                 .sort(StringUtils.isBlank(sorting) ? "time_desc" : sorting)
                 .type(type)
                 .build();
-        List<HouseDto> hotHouse = recommend.getHotHouse(3);
         Pagination page = new Pagination(pageSize, pageNum, result.getTotal());
+        List<HouseDto> hotHouse = recommend.getHotHouse(3);
         modelMap.put("recomHouses", hotHouse);
         modelMap.put("ps", result);
         modelMap.put("vo", build);
@@ -237,7 +247,7 @@ public class HouseController {
     }
 
     @GetMapping(value = "/del")
-    public String delsale(@RequestParam("id") Long id,@RequestParam("pageType") String pageType) {
+    public String delsale(@RequestParam("id") Long id, @RequestParam("pageType") String pageType) {
         SecurityUser userHolder = UserContext.getUserHolder();
         houseService.unbindUser2House(id, userHolder.getUseId(), pageType.equals("own") ? HouseUserType.SALE : HouseUserType.BOOKMARK);
         return "redirect:/house/ownlist";

@@ -28,7 +28,7 @@
                     <section id="content">
                         <header><h1>博客列表</h1></header>
                         
-                     <#list ps.list as blog> 
+                     <#list ps.result as blog>
                         <article class="blog-post">
                             <header><a href="/blog/detail?id=${blog.id}"><h2>${blog.title}</h2></a></header>
                             <figure class="meta">
@@ -49,7 +49,7 @@
 
                         <!-- Pagination -->
                         <div class="center">
-                              <@common.paging ps.pagination/>
+                              <@common.paging pager/>
                         </div><!-- /.center-->
                     </section><!-- /#content -->
                 </div><!-- /.col-md-9 -->

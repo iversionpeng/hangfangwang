@@ -7,5 +7,5 @@ import com.okcoin.house.dto.BlogDto;
 public interface BlogService {
     Pager<BlogDto> queryBlog(Blog query, Integer pageNum, Integer pageSize);
 
-    Blog queryOneBlog(Long id);
+    BlogDto queryOneBlog(Long id);
 }

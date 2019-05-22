@@ -1,20 +1,15 @@
 package com.okcoin.house.service;
 
-import com.github.pagehelper.page.PageParams;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Ordering;
-import com.okcoin.house.api.domain.House;
 import com.okcoin.house.api.service.HouseService;
 import com.okcoin.house.common.support.model.Pager;
 import com.okcoin.house.dto.HouseDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.BoundZSetOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;

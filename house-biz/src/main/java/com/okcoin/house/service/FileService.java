@@ -1,21 +1,21 @@
 package com.okcoin.house.service;
 
 import com.aliyun.oss.OSSClient;
-import com.aliyun.oss.model.*;
+import com.aliyun.oss.model.Bucket;
+import com.aliyun.oss.model.OSSObject;
+import com.aliyun.oss.model.ObjectMetadata;
+import com.aliyun.oss.model.PutObjectResult;
 import com.google.common.collect.Lists;
-import com.okcoin.house.common.autoconfig.FcOssClient;
 import com.okcoin.house.common.autoconfig.OssProperties;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.net.URL;
 import java.time.Instant;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -34,8 +34,8 @@ public class FileService {
     @Autowired
     private OssProperties ossProperties;
 
-    @Value("${file.path}")
-    private String filePath;
+//    @Value("${file.path}")
+//    private String filePath;
 
 
     /**
@@ -217,39 +217,39 @@ public class FileService {
         return "image/jpeg";
     }
 
-    /**
-     * 获得url链接
-     *
-     * @param key
-     * @return
-     */
-    public String getUrl(String key) {
-        // 设置URL过期时间为10年  3600l* 1000*24*365*10
-        Date expiration = new Date(System.currentTimeMillis() + 3600L * 1000 * 24 * 365 * 10);
-        // 生成URL
-        URL url = ossClient.generatePresignedUrl(ossProperties.getBucketName(), key, expiration);
-        if (url != null) {
-            return url.toString();
-        }
-        return null;
-    }
-
-    private List<String> getFilePath(List<MultipartFile> files) {
-        List<String> paths = Lists.newArrayList();
-        final File[] localFile = new File[1];
-        files.stream().filter(x -> Objects.nonNull(x)).forEach(file -> {
-            //将文件保存在本地
-            try {
-                localFile[0] = saveToLocal(file, filePath);
-                //获取文件路径
-                String path = StringUtils.substringAfterLast(localFile[0].getAbsolutePath(), filePath);
-                paths.add(path);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        return paths;
-    }
+//    /**
+//     * 获得url链接
+//     *
+//     * @param key
+//     * @return
+//     */
+//    public String getUrl(String key) {
+//        // 设置URL过期时间为10年  3600l* 1000*24*365*10
+//        Date expiration = new Date(System.currentTimeMillis() + 3600L * 1000 * 24 * 365 * 10);
+//        // 生成URL
+//        URL url = ossClient.generatePresignedUrl(ossProperties.getBucketName(), key, expiration);
+//        if (url != null) {
+//            return url.toString();
+//        }
+//        return null;
+//    }
+//
+//    private List<String> getFilePath(List<MultipartFile> files) {
+//        List<String> paths = Lists.newArrayList();
+//        final File[] localFile = new File[1];
+//        files.stream().filter(x -> Objects.nonNull(x)).forEach(file -> {
+//            //将文件保存在本地
+//            try {
+//                localFile[0] = saveToLocal(file, filePath);
+//                //获取文件路径
+//                String path = StringUtils.substringAfterLast(localFile[0].getAbsolutePath(), filePath);
+//                paths.add(path);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        });
+//        return paths;
+//    }
 
     private File saveToLocal(MultipartFile file, String filePath) throws IOException {
         File newFile = new File(filePath + "/" + Instant.now().getEpochSecond() + "/" + file.getOriginalFilename());

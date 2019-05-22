@@ -5,49 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc38feb2-eae7-42b1-95a5-d59c3b210b9a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/HouseMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/HouseMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/AgencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/AgencyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/HouseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/HouseUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/HouseUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/HouseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/HouseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/AgencyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/AgencyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/BlogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/BlogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMsgMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMsgMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/AgencyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/AgencyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/NoticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/NoticService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/BlogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/CommentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/RecommendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/RecommendService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/BizErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/BizErrorCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/HouseUserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/HouseUserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/NoticeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/NoticeType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/model/SecurityUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/model/SecurityUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/config/I18nConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/config/I18nConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-biz/src/test/java/com/okcoin/house/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-biz/src/test/java/com/okcoin/house/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/autoconfig/OssProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/autoconfig/OssProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/filter/LogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/filter/LogFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AgencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AgencyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/BlogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages_en_US.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/messages/messages_zh_CN.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/templates/house/detail.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/templates/house/detail.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/templates/user/agency/agentList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/templates/user/agency/agentList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/templates/user/agent/agentDetail.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/templates/user/agent/agentDetail.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/templates/user/agent/agentList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/templates/user/agent/agentList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/templates/blog/listing.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/templates/blog/listing.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/src/main/resources/templates/common/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/main/resources/templates/common/common.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/house-api/target/" />
     <ignored path="$PROJECT_DIR$/house-biz/target/" />
@@ -56,6 +41,11 @@
     <ignored path="$PROJECT_DIR$/house-web/target/" />
     <ignored path="$PROJECT_DIR$/house-job/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/house-admin/target/" />
+    <ignored path="$PROJECT_DIR$/services/house-admin/target/" />
+    <ignored path="$PROJECT_DIR$/services/house-admin/eurake-server/target/" />
+    <ignored path="$PROJECT_DIR$/eurake-server/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,67 +72,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HouseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java">
+      <file leaf-file-name="NoticService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/NoticService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="156" selection-start-line="156" selection-end-line="156" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="117" column="97" selection-start-line="117" selection-start-column="97" selection-end-line="117" selection-end-column="97" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HouseServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java">
+      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="192" column="49" selection-start-line="192" selection-start-column="49" selection-end-line="192" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3904#3905#0" expanded="true" />
-                <element signature="e#3961#3962#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Manual-HouseMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecommendService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/RecommendService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HouseMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+            <state relative-caret-position="49">
+              <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -161,41 +104,38 @@
       </list>
     </option>
   </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>comment/leaveBlogComment</find>
-      <find>detail</find>
-      <find>getHouseUser</find>
-      <find>agent</find>
-      <find>house/rating</find>
-      <find>ret</find>
-      <find>house/bookmark</find>
-      <find>collect</find>
-      <find>bindUser2House</find>
-      <find>house/unbookmark</find>
-      <find>deleteHouseUser</find>
-      <find>house/bookmarked</find>
-      <find>commentList</find>
-      <find>leaveMsg</find>
-      <find>UserMsg</find>
-      <find>/rating</find>
-      <find>/house/rating</find>
-      <find>blogField</find>
-      <find>blog/list</find>
-      <find>blog/detail</find>
-      <find>rating</find>
-      <find>/bookmark</find>
-      <find>bookmark</find>
-      <find>bookmarked</find>
-      <find>ps</find>
-      <find>result</find>
-      <find>.done(function</find>
-      <find>del</find>
-      <find>houseUser</find>
-      <find>Transactional</find>
+      <find>proxyFactory</find>
+      <find>transactionFactory</find>
+      <find>packageSearchPath</find>
+      <find>configuration</find>
+      <find>environment</find>
+      <find>xpath</find>
+      <find>parser</find>
+      <find>parsed</find>
+      <find>settings</find>
+      <find>localReflectorFactory</find>
+      <find>findForClass</find>
+      <find>reflectorMap</find>
+      <find>typeAliases</find>
+      <find>packageName</find>
+      <find>defaultClassLoader</find>
+      <find>getBeanProperty</find>
+      <find>object</find>
+      <find>results</find>
+      <find>houseCondition</find>
+      <find>parameterObject</find>
+      <find>mappedStatement</find>
+      <find>parameter</find>
+      <find>sql</find>
+      <find>ms</find>
+      <find>sqlStat</find>
+      <find>args</find>
+      <find>genericParamName</find>
+      <find>param</find>
+      <find>buffer</find>
+      <find>inputStream</find>
     </findStrings>
     <replaceStrings>
       <replace>mailSender</replace>
@@ -220,62 +160,68 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/house-web/src/main/resources/static/consult-email-template.html" />
-        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AgencyController.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/config/RedisTemplate.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/HouseDto.java" />
-        <option value="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/AppTest.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/Recommend.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/CommentService.java" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/UserService.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/UserMapper.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/CommentDto.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/CommentMapper.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-CommentMapper.xml" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/CommentService.java" />
-        <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/model/SecurityUser.java" />
-        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AccountController.java" />
-        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/CommentController.java" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/HouseMsg.java" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/UserMsg.java" />
-        <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/NoticeType.java" />
-        <option value="$PROJECT_DIR$/house-web/src/main/resources/messages/messages.properties" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMsgMapper.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseMsgMapper.xml" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/HouseService.java" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/HouseUserService.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/CommentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/CommentMapper.xml" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/BlogService.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-BlogMapper.xml" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/BlogMapper.xml" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/BlogMapper.java" />
-        <option value="$PROJECT_DIR$/house-biz/pom.xml" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/BlogDto.java" />
-        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/BlogService.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/BlogServiceImpl.java" />
         <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/CommonConstants.java" />
         <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/config/I18nConfig.java" />
         <option value="$PROJECT_DIR$/house-web/src/main/resources/templates/house/detail.ftl" />
         <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/HouseUserType.java" />
-        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/BlogController.java" />
         <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseUserMapper.xml" />
         <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseUserMapper.java" />
         <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java" />
-        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml" />
         <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMapper.java" />
+        <option value="$PROJECT_DIR$/house-admin/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/house-admin/src/main/java/com/okcoin/App.java" />
+        <option value="$PROJECT_DIR$/house-admin/src/main/java/com/okcoin/AdminApplication.java" />
+        <option value="$PROJECT_DIR$/house-web/pom.xml" />
+        <option value="$PROJECT_DIR$/house-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/services/house-admin/eurake-server/pom.xml" />
+        <option value="$PROJECT_DIR$/services/house-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/services/eurake-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eurake-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/java/com/okcoin/EurekaServerApplication.java" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/RecommendService.java" />
+        <option value="$PROJECT_DIR$/house-web/src/main/resources/templates/blog/listing.ftl" />
+        <option value="$PROJECT_DIR$/house-web/src/main/resources/templates/common/common.ftl" />
+        <option value="$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/BlogService.java" />
+        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/BlogController.java" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/BlogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AccountController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/FileService.java" />
+        <option value="$PROJECT_DIR$/house-biz/src/test/java/com/okcoin/house/AppTest.java" />
+        <option value="$PROJECT_DIR$/house-biz/pom.xml" />
+        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java" />
+        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AgencyController.java" />
+        <option value="$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/App.java" />
+        <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/filter/LogFilter.java" />
         <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/config/HouseMyBatisConfig.java" />
+        <option value="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/ProxyTest.java" />
+        <option value="$PROJECT_DIR$/house-web/src/test/resources/code/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/User.java" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/UserMapper.java" />
+        <option value="$PROJECT_DIR$/house-web/src/test/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/house-web/src/test/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml" />
+        <option value="$PROJECT_DIR$/house-web/src/main/resources/static/consult-email-template.html" />
+        <option value="$PROJECT_DIR$/house-web/src/main/resources/static/pod-scale-alarm.html" />
+        <option value="$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/TestApp.java" />
+        <option value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/NoticService.java" />
+        <option value="$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/autoconfig/OssProperties.java" />
+        <option value="$PROJECT_DIR$/house-web/src/main/resources/application.yaml" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -286,11 +232,6 @@
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="E:\OpenSourse\maven\apache-maven-3.5.3\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
     <option name="disabledProfiles">
       <list>
@@ -304,21 +245,6 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="house-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="house-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="house-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.springframework.boot:spring-boot-starter-data-redis:2.0.3.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -350,70 +276,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="houses" type="b2602c69:ProjectViewProjectNode" />
               <item name="houses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="house" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="house" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="house" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="houses" type="b2602c69:ProjectViewProjectNode" />
@@ -463,19 +333,58 @@
             <path>
               <item name="houses" type="b2602c69:ProjectViewProjectNode" />
               <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="houses" type="b2602c69:ProjectViewProjectNode" />
               <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="main_mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="house" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfig" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="houses" type="b2602c69:ProjectViewProjectNode" />
@@ -518,51 +427,46 @@
               <item name="house-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="houses" type="462c0819:PsiDirectoryNode" />
+              <item name="house-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="house" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="houses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="houses" type="462c0819:PsiDirectoryNode" />
-              <item name="house-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -571,45 +475,53 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="i18&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-common/src/main/java/com/okcoin/house/config/I18nConfig.java&#10;Myba&#9;PSI&#9;JAVA://com.okcoin.house.config.HouseMyBatisConfig&#10;application.&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/application.yaml&#10;detail&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/templates/house/detail.ftl&#10;houseUser.xml&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/resources/main_mapper/Manual-HouseUserMapper.xml&#10;USer&#9;PSI&#9;JAVA://com.okcoin.house.api.domain.User&#10;File&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-common/src/main/java/com/okcoin/house/common/support/enums/FileType.java&#10;housedto&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-api/src/main/java/com/okcoin/house/dto/HouseDto.java&#10;Manua&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml&#10;DispatchServlet&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class" />
+    <property name="SearchEverywhereHistoryKey" value="Collwrap&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.wrapper.CollectionWrapper&#10;BaseW&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.wrapper.BaseWrapper&#10;DefaultObjectFactory&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.factory.DefaultObjectFactory&#10;QueueI&#9;PSI&#9;JAVA://reactor.util.concurrent.Queues.QueueIterator&#10;Inter&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/plugin/Interceptor.java&#10;mybatis-3-config.dtd&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/xml/mybatis-3-config.dtd&#10;sqlSessionFa&#9;PSI&#9;JAVA://org.apache.ibatis.session.SqlSessionFactoryBuilder&#10;houseCon&#9;PSI&#9;JAVA://com.okcoin.house.config.HouseMyBatisConfig&#10;Configu&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/Configuration.java&#10;mapperMethod&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/binding/MapperMethod.java&#10;Notic&#9;PSI&#9;JAVA://com.okcoin.house.service.NoticService&#10;usermapper&#9;PSI&#9;JAVA://com.okcoin.house.dao.main.UserMapper&#10;sqlSessionTe&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java&#10;MapperProxyFactory&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/binding/MapperProxyFactory.java&#10;Mapper&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/binding/MapperRegistry.java&#10;sqlSession&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/SqlSession.java&#10;defa&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.java&#10;mybatis-config&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/mybatis-config.xml&#10;sqlSessionFactory&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/SqlSessionFactoryBuilder.java&#10;sqlS&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/SqlSessionFactoryBuilder.java&#10;SqlSessionFactoryBuilder &#9;PSI&#9;JAVA://org.apache.ibatis.session.SqlSessionFactoryBuilder&#10;MapperRegistry&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/binding/MapperRegistry.java&#10;SqlSessionFactoryBuilder&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/SqlSessionFactoryBuilder.java&#10;House&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/java/com/okcoin/house/config/HouseMyBatisConfig.java&#10;applica&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/application.yaml&#10;SqlSessionFactory &#9;PSI&#9;JAVA://org.apache.ibatis.session.defaults.DefaultSqlSessionFactory&#10;manual&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml&#10;a&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/application.yaml&#10;appli&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/application.yaml&#10;hou&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/java/com/okcoin/house/web/HouseController.java&#10;app&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/application.yaml&#10;App&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/java/com/okcoin/house/App.java&#10;Hous&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/java/com/okcoin/house/web/HouseController.java&#10;NoticS&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/java/com/okcoin/house/service/NoticService.java&#10;file&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/java/com/okcoin/house/service/FileService.java&#10;oss&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-common/src/main/java/com/okcoin/house/common/autoconfig/OssProperties.java&#10;NoticService&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/java/com/okcoin/house/service/NoticService.java&#10;ossP&#9;PSI&#9;JAVA://com.okcoin.house.common.autoconfig.OssProperties&#10;/account&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/java/com/okcoin/house/web/AccountController.java&#10;i18&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-common/src/main/java/com/okcoin/house/config/I18nConfig.java&#10;Myba&#9;PSI&#9;JAVA://com.okcoin.house.config.HouseMyBatisConfig&#10;application.&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/application.yaml&#10;detail&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-web/src/main/resources/templates/house/detail.ftl&#10;houseUser.xml&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/resources/main_mapper/Manual-HouseUserMapper.xml&#10;USer&#9;PSI&#9;JAVA://com.okcoin.house.api.domain.User&#10;File&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-common/src/main/java/com/okcoin/house/common/support/enums/FileType.java&#10;housedto&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-api/src/main/java/com/okcoin/house/dto/HouseDto.java&#10;Manua&#9;FILE&#9;file://G:/ideaWorkSpace/houses/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml&#10;DispatchServlet&#9;FILE&#9;jar://F:/opensource/maven/JEECG-repository/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\ideaWorkSpace\houses\house-web\src\main\resources\static" />
-      <recent name="G:\ideaWorkSpace\houses\house-web\src\main\resources" />
-      <recent name="G:\ideaWorkSpace\houses\house-web\src\main\resources\static\imgs\00000000" />
-      <recent name="G:\ideaWorkSpace\houses\house-biz\src\main\resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.okcoin.house" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\ideaWorkSpace\houses\house-biz\src\main\resources\main_mapper" />
-      <recent name="G:\ideaWorkSpace\houses\house-web\src\main\resources\static" />
-      <recent name="G:\ideaWorkSpace\houses\house-web\src\main\resources\static\imgs" />
-      <recent name="G:\ideaWorkSpace\houses\house-biz\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.okcoin.house.api.domain" />
-      <recent name="com.okcoin.house.dto" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.okcoin.house.api.service" />
       <recent name="com.okcoin.house.common.support.enums" />
       <recent name="com.okcoin.house.service" />
       <recent name="com.okcoin.house.common.autoconfig" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.okcoin.house" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\ideaWorkSpace\houses\house-web\src\test\resources\mapper" />
+      <recent name="G:\ideaWorkSpace\houses\eureka-server\src\main\resources" />
+      <recent name="G:\ideaWorkSpace\houses\house-admin\src\main\resources" />
+      <recent name="G:\ideaWorkSpace\houses\house-biz\src\main\resources\main_mapper" />
+      <recent name="G:\ideaWorkSpace\houses\house-web\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.okcoin.house" />
+      <recent name="com.okcoin.house.api.domain" />
+      <recent name="com.okcoin.house.dto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\ideaWorkSpace\houses\house-web\src\test\resources" />
+      <recent name="G:\ideaWorkSpace\houses\eureka-server" />
+      <recent name="G:\ideaWorkSpace\houses\eurake-server\src" />
+      <recent name="G:\ideaWorkSpace\houses" />
+      <recent name="G:\ideaWorkSpace\houses\services" />
+    </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -617,48 +529,17 @@
         </RuleState>
         <RuleState>
           <option name="name" value="StatusDashboardGroupingRule" />
+          <option name="enabled" value="false" />
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.07126259" />
   </component>
-  <component name="RunManager" selected="Spring Boot.App">
-    <configuration name="AgencyController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.okcoin.house.web.AgencyController" />
-      <module name="house-web" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.okcoin.house.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="HouseController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.okcoin.house.web.HouseController" />
-      <module name="house-web" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.okcoin.house.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="HouseServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.okcoin.house.service.HouseServiceImpl" />
-      <module name="house-biz" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.okcoin.house.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestApp.testIo">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="AppTest.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProxyTest.d" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="house-web" />
       <extension name="coverage">
         <pattern>
@@ -669,8 +550,77 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.okcoin.house" />
-      <option name="MAIN_CLASS_NAME" value="com.okcoin.house.AppTest" />
-      <option name="METHOD_NAME" value="testRedis" />
+      <option name="MAIN_CLASS_NAME" value="com.okcoin.house.ProxyTest" />
+      <option name="METHOD_NAME" value="d" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestApp.testIo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="house-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.okcoin.house.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.okcoin.house" />
+      <option name="MAIN_CLASS_NAME" value="com.okcoin.house.TestApp" />
+      <option name="METHOD_NAME" value="testIo" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestApp.testLoadProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="house-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.okcoin.house.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.okcoin.house" />
+      <option name="MAIN_CLASS_NAME" value="com.okcoin.house.TestApp" />
+      <option name="METHOD_NAME" value="testLoadProperties" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestApp.testReflex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="house-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.okcoin.house.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.okcoin.house" />
+      <option name="MAIN_CLASS_NAME" value="com.okcoin.house.TestApp" />
+      <option name="METHOD_NAME" value="testReflex" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -730,19 +680,19 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="JUnit.ProxyTest.d" />
+      <item itemvalue="JUnit.TestApp.testLoadProperties" />
       <item itemvalue="Spring Boot.App" />
-      <item itemvalue="Application.HouseServiceImpl" />
-      <item itemvalue="Application.HouseController" />
-      <item itemvalue="Application.AgencyController" />
-      <item itemvalue="JUnit.AppTest.testRedis" />
+      <item itemvalue="JUnit.TestApp.testReflex" />
+      <item itemvalue="JUnit.TestApp.testIo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestApp.testIo" />
         <item itemvalue="Spring Boot.App" />
-        <item itemvalue="JUnit.AppTest.testRedis" />
-        <item itemvalue="Application.AgencyController" />
-        <item itemvalue="Application.HouseController" />
-        <item itemvalue="Application.HouseServiceImpl" />
+        <item itemvalue="JUnit.TestApp.testReflex" />
+        <item itemvalue="JUnit.TestApp.testLoadProperties" />
+        <item itemvalue="JUnit.ProxyTest.d" />
       </list>
     </recent_temporary>
   </component>
@@ -819,7 +769,35 @@
       <workItem from="1557486277364" duration="6682000" />
       <workItem from="1557500530824" duration="5098000" />
       <workItem from="1557532193677" duration="6853000" />
-      <workItem from="1557542121066" duration="28501000" />
+      <workItem from="1557542121066" duration="29205000" />
+      <workItem from="1557581063798" duration="155000" />
+      <workItem from="1557581269620" duration="634000" />
+      <workItem from="1557583059467" duration="4549000" />
+      <workItem from="1557619065654" duration="8886000" />
+      <workItem from="1557629925104" duration="2870000" />
+      <workItem from="1557638694049" duration="33000" />
+      <workItem from="1557640781385" duration="57000" />
+      <workItem from="1557643816673" duration="3470000" />
+      <workItem from="1557650329790" duration="4941000" />
+      <workItem from="1557669165836" duration="6313000" />
+      <workItem from="1557704323007" duration="4104000" />
+      <workItem from="1557741333129" duration="2481000" />
+      <workItem from="1557791639003" duration="6982000" />
+      <workItem from="1558052055625" duration="2976000" />
+      <workItem from="1558056861213" duration="67000" />
+      <workItem from="1558057088615" duration="5000" />
+      <workItem from="1558059915028" duration="18437000" />
+      <workItem from="1558085537102" duration="4316000" />
+      <workItem from="1558137888531" duration="21431000" />
+      <workItem from="1558164400360" duration="19594000" />
+      <workItem from="1558188303125" duration="2075000" />
+      <workItem from="1558224034573" duration="7431000" />
+      <workItem from="1558244961604" duration="19146000" />
+      <workItem from="1558312818814" duration="13012000" />
+      <workItem from="1558332972074" duration="18182000" />
+      <workItem from="1558417849291" duration="24536000" />
+      <workItem from="1558447600097" duration="3556000" />
+      <workItem from="1558483532307" duration="13395000" />
     </task>
     <task id="LOCAL-00001" summary="init run circumstance">
       <created>1554367054761</created>
@@ -891,43 +869,50 @@
       <option name="project" value="LOCAL" />
       <updated>1557491605848</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="most model complete">
+      <created>1557580554539</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1557580554539</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 49m 33s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testLoadProperties - 2019.05.19 at 21h 32m 54s.xml">
+      <configuration name="TestApp.testLoadProperties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 50m 47s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testLoadProperties - 2019.05.19 at 21h 36m 36s.xml">
+      <configuration name="TestApp.testLoadProperties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 51m 30s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testLoadProperties - 2019.05.20 at 08h 47m 00s.xml">
+      <configuration name="TestApp.testLoadProperties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 52m 09s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testLoadProperties - 2019.05.20 at 08h 47m 24s.xml">
+      <configuration name="TestApp.testLoadProperties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 52m 56s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testLoadProperties - 2019.05.20 at 08h 47m 49s.xml">
+      <configuration name="TestApp.testLoadProperties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 54m 56s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testLoadProperties - 2019.05.20 at 08h 49m 43s.xml">
+      <configuration name="TestApp.testLoadProperties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 55m 38s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testLoadProperties - 2019.05.20 at 10h 51m 23s.xml">
+      <configuration name="TestApp.testLoadProperties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 56m 55s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testLoadProperties - 2019.05.20 at 11h 46m 21s.xml">
+      <configuration name="TestApp.testLoadProperties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 57m 54s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testReflex - 2019.05.21 at 14h 14m 07s.xml">
+      <configuration name="TestApp.testReflex" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testRedis - 2019.05.11 at 15h 59m 22s.xml">
-      <configuration name="AppTest.testRedis" configurationId="JUnit" />
+    <history-entry file="TestApp_testIo - 2019.05.22 at 10h 32m 44s.xml">
+      <configuration name="TestApp.testIo" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321931000" />
+    <option name="totallyTimeSpent" value="536269000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -943,9 +928,9 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="18" sideWeight="0.49924356" weight="0.66505635" />
-      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.5030257" side_tool="true" weight="0.7906602" />
+      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.43721634" side_tool="true" weight="0.42190015" />
       <window_info anchor="bottom" x="419" y="194" width="527" height="379" id="JRebel Console" order="15" sideWeight="0.38653" side_tool="true" type="WINDOWED" weight="0.57686454" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.35022694" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.22541603" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" auto_hide="true" x="88" y="506" width="953" height="520" id="JRebel Executor" order="14" sideWeight="0.61346996" type="WINDOWED" weight="0.23672883" />
       <window_info id="Capture Tool" order="8" />
@@ -955,30 +940,31 @@
       <window_info id="Structure" order="1" sideWeight="0.5033113" side_tool="true" weight="0.24205749" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.41867954" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.5410628" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32850242" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.5636896" weight="0.27697262" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.56278366" weight="0.42190015" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32850242" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="17" sideWeight="0.4969743" weight="0.6795491" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4977307" weight="0.5362319" />
+      <window_info anchor="bottom" id="Run Dashboard" order="20" sideWeight="0.4977307" weight="0.46215782" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="17" sideWeight="0.4969743" visible="true" weight="0.6795491" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4977307" weight="0.24798712" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32850242" />
-      <window_info anchor="bottom" x="25" y="143" width="1316" height="481" id="Terminal" order="9" sideWeight="0.49848714" type="FLOATING" weight="0.784219" />
+      <window_info anchor="bottom" x="-24" y="130" width="1316" height="853" id="Terminal" order="9" sideWeight="0.49848714" weight="0.510467" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="20" />
-      <window_info content_ui="combo" x="1" y="268" width="1360" height="273" id="Project" order="0" sideWeight="0.56164384" visible="true" weight="0.18078668" />
+      <window_info content_ui="combo" x="1" y="268" width="1360" height="273" id="Project" order="0" sideWeight="0.5591133" visible="true" weight="0.15506808" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
       <window_info id="Web" order="7" side_tool="true" weight="0.32980332" />
-      <window_info id="JRebel" order="5" sideWeight="0.4390244" side_tool="true" weight="0.078668684" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.30273753" />
+      <window_info id="JRebel" order="5" sideWeight="0.4408867" side_tool="true" weight="0.2375189" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="6" sideWeight="0.43835616" side_tool="true" weight="0.21028744" />
       <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.57564294" weight="0.41223833" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24432677" />
       <window_info anchor="bottom" id="Problems" order="13" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.30273753" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
     </layout>
@@ -1064,7 +1050,8 @@
     <MESSAGE value="signin model" />
     <MESSAGE value="signin complete" />
     <MESSAGE value="add house model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add house model" />
+    <MESSAGE value="most model complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="most model complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1239,15 +1226,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/NoticService.java</url>
-          <line>64</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="250" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperMethod.class</url>
-          <line>130</line>
-          <properties />
-          <option name="timeStamp" value="258" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/SqlSessionTemplate.class</url>
@@ -1297,479 +1278,703 @@
           <properties />
           <option name="timeStamp" value="278" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
-          <line>232</line>
-          <properties />
-          <option name="timeStamp" value="375" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java</url>
-          <line>224</line>
+          <line>234</line>
           <properties />
           <option name="timeStamp" value="383" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java</url>
-          <line>235</line>
+          <line>245</line>
           <properties />
           <option name="timeStamp" value="384" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
-          <line>179</line>
-          <properties />
-          <option name="timeStamp" value="385" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java</url>
-          <line>240</line>
+          <line>250</line>
           <properties />
           <option name="timeStamp" value="388" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java</url>
-          <line>242</line>
+          <line>252</line>
           <properties />
           <option name="timeStamp" value="389" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
-          <line>193</line>
-          <properties />
-          <option name="timeStamp" value="390" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
-          <line>198</line>
-          <properties />
-          <option name="timeStamp" value="391" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
-          <line>194</line>
-          <properties />
-          <option name="timeStamp" value="392" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseUserServiceImpl.java</url>
           <line>39</line>
           <properties />
           <option name="timeStamp" value="393" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java</url>
-          <line>156</line>
-          <properties />
-          <option name="timeStamp" value="397" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
-          <line>113</line>
+          <line>104</line>
           <properties />
-          <option name="timeStamp" value="398" />
+          <option name="timeStamp" value="444" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="449" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java</url>
+          <line>249</line>
+          <properties />
+          <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>221</line>
+          <properties />
+          <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>237</line>
+          <properties />
+          <option name="timeStamp" value="476" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>245</line>
+          <properties />
+          <option name="timeStamp" value="477" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>253</line>
+          <properties />
+          <option name="timeStamp" value="478" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>261</line>
+          <properties />
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/plugin/Plugin.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java</url>
+          <line>432</line>
+          <properties />
+          <option name="timeStamp" value="488" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInterceptor.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInterceptor.java</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="490" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInterceptor.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="491" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInterceptor.java</url>
+          <line>144</line>
+          <properties />
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInterceptor.java</url>
+          <line>200</line>
+          <properties />
+          <option name="timeStamp" value="493" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>155</line>
+          <properties />
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>325</line>
+          <properties />
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>333</line>
+          <properties />
+          <option name="timeStamp" value="497" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/ReuseExecutor.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/filter/FilterChainImpl.java</url>
+          <line>3408</line>
+          <properties />
+          <option name="timeStamp" value="499" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46-sources.jar!/com/mysql/jdbc/PreparedStatement.java</url>
+          <line>1196</line>
+          <properties />
+          <option name="timeStamp" value="500" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java</url>
+          <line>145</line>
+          <properties />
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="510" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>162</line>
+          <properties />
+          <option name="timeStamp" value="514" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/SimpleExecutor.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="515" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/TestApp.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="516" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInterceptor.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="517" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/statement/PreparedStatementHandler.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="518" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/pool/DruidPooledPreparedStatement.java</url>
+          <line>497</line>
+          <properties />
+          <option name="timeStamp" value="519" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/pool/DruidPooledPreparedStatement.java</url>
+          <line>503</line>
+          <properties />
+          <option name="timeStamp" value="520" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInterceptor.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="521" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/SqlSourceBuilder.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="523" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/mapping/MappedStatement.java</url>
+          <line>308</line>
+          <properties />
+          <option name="timeStamp" value="526" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/ReuseExecutor.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="527" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/filter/FilterChainImpl.java</url>
+          <line>3406</line>
+          <properties />
+          <option name="timeStamp" value="528" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46-sources.jar!/com/mysql/jdbc/PreparedStatement.java</url>
+          <line>1161</line>
+          <properties />
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46-sources.jar!/com/mysql/jdbc/PreparedStatement.java</url>
+          <line>1857</line>
+          <properties />
+          <option name="timeStamp" value="530" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/ParamNameResolver.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="531" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="400" />
+      <option name="time" value="547" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="parameterObject" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/CommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/model/SecurityUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/HouseUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="22" selection-start-line="22" selection-end-line="26" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/HouseDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1598">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/NoticeType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/messages/messages.properties">
-      <provider selected="true" editor-type-id="ResourceBundle" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/NoticService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="151" column="44" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/HouseMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMsgMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="196" column="5" lean-forward="true" selection-start-line="184" selection-start-column="3" selection-end-line="196" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/HouseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/HouseUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseMsgMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/config/HouseMyBatisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/CommentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/House.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1883">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-CommentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/UserMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/BlogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-BlogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/BlogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/CommentDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/dto/BlogDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/domain/Blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-api/src/main/java/com/okcoin/house/api/service/BlogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/CommonConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/config/I18nConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/enums/HouseUserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/BlogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/BlogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/templates/house/detail.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="359" column="17" lean-forward="true" selection-start-line="359" selection-start-column="17" selection-end-line="359" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/support/model/ResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/static/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="55" column="25" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/templates/house/ownlist.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2188" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="29" column="81" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/HouseMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/dao/main/HouseMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="162">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/plugin/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/scripting/xmltags/DynamicContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/parsing/GenericTokenParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-787">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/StaticSqlSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/property/PropertyTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/wrapper/MapWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/house-biz/src/main/resources/main_mapper/Manual-HouseMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        <state relative-caret-position="142">
+          <caret line="59" column="63" lean-forward="true" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/RecommendService.java">
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="123">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/MetaObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/mapping/BoundSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/pool/DruidPooledStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="279" selection-start-line="279" selection-end-line="279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/pool/DruidPooledConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="1210" selection-start-line="1210" selection-end-line="1210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/filter/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="831" column="12" selection-start-line="831" selection-start-column="12" selection-end-line="831" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/proxy/jdbc/ConnectionProxyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/proxy/jdbc/StatementProxyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46-sources.jar!/com/mysql/jdbc/StatementImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="685" selection-start-line="685" selection-end-line="685" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46-sources.jar!/com/mysql/jdbc/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-404">
+          <caret line="1198" selection-start-line="1198" selection-end-line="1198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/filter/stat/StatFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="356" selection-start-line="356" selection-end-line="356" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/filter/FilterEventAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="443" selection-start-line="443" selection-end-line="443" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/filter/FilterChainImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="3406" selection-start-line="3406" selection-end-line="3406" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/proxy/jdbc/PreparedStatementProxyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/pool/DruidPooledPreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="497" selection-start-line="497" selection-end-line="497" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/java/com/okcoin/house/web/HouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/HouseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="192" column="49" selection-start-line="192" selection-start-column="49" selection-end-line="192" selection-end-column="49" />
+        <state relative-caret-position="86">
+          <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/binding/MapperProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/binding/MapperMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="138" column="41" selection-start-line="138" selection-start-column="41" selection-end-line="138" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="712" column="25" selection-start-line="712" selection-start-column="25" selection-end-line="712" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/scripting/xmltags/DynamicSqlSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/statement/RoutingStatementHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/statement/PreparedStatementHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1725">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/SqlSourceBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#2506#2507#0" expanded="true" />
+            <element signature="e#2544#2545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar!/org/slf4j/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/OpenSourse/Java/jdk1.8/src.zip!/java/io/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+          <folding>
+            <element signature="e#8918#8919#0" expanded="true" />
+            <element signature="e#8973#8974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/plugin/Plugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/ReuseExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#4041#4042#0" expanded="true" />
+            <element signature="e#4078#4079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/ParamNameResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="325" selection-start-line="325" selection-end-line="325" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2-sources.jar!/com/github/pagehelper/PageInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/opensource/maven/JEECG-repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/mapping/MappedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+          <folding>
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6816#6817#0" expanded="true" />
+            <element signature="e#7582#7583#0" expanded="true" />
+            <element signature="e#7611#7612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/OpenSourse/Java/jdk1.8/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1434" column="30" selection-start-line="1434" selection-start-column="30" selection-end-line="1434" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/static/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/static/pod-scale-alarm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/static/consult-email-template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/test/java/com/okcoin/house/TestApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="76" column="27" lean-forward="true" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3904#3905#0" expanded="true" />
-            <element signature="e#3961#3962#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-common/src/main/java/com/okcoin/house/common/autoconfig/OssProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-biz/src/main/java/com/okcoin/house/service/NoticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="117" column="97" selection-start-line="117" selection-start-column="97" selection-end-line="117" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/house-web/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1825,7 +2030,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>houses-parent</last-edited>
+          <last-edited>eureka-server</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

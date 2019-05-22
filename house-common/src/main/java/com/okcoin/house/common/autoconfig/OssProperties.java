@@ -34,7 +34,7 @@ public class OssProperties {
     /**
      * 阿里云API的外网域名
      */
-    private String ENDPOINT = "oss-cn-beijing.aliyuncs.com";
+    private String ENDPOINT = "oss-cn-beijing-internal.aliyuncs.com";
 
     public String getAccessKeyId() {
         return accessKeyId;

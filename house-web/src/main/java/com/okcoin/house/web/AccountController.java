@@ -83,7 +83,17 @@ public class AccountController {
             map.put("successMsg", "Account activated</br>");
             HttpSession session = request.getSession(true);
             user.setPasswd("");
-            session.setAttribute("loginUser", user);
+            SecurityUser securityUser = SecurityUser.builder()
+                    .useId(user.getId())
+                    .name(user.getName())
+                    .agencyId(user.getAgencyId())
+                    .email(user.getEmail())
+                    .avatar(user.getAvatar())
+                    .type(user.getType())
+                    .phone(user.getPhone())
+                    .aboutme(user.getAboutme())
+                    .build();
+            session.setAttribute(UserCommonConstants.USER_ATTRIBUTE, securityUser);
             return "redirect:/index?" + asUrlParams(map);
         }
         map.put("errorMsg", BizErrorCodeEnum.KEY_INVALID.getMessage());
@@ -108,7 +118,7 @@ public class AccountController {
         HttpSession session = request.getSession(true);
         SecurityUser securityUser = SecurityUser.builder()
                 .useId(user.getId())
-                .name(username)
+                .name(user.getName())
                 .agencyId(user.getAgencyId())
                 .email(user.getEmail())
                 .avatar(user.getAvatar())

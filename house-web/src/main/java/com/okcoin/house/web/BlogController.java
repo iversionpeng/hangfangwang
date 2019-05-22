@@ -6,6 +6,7 @@ import com.okcoin.house.api.service.BlogService;
 import com.okcoin.house.api.service.CommentService;
 import com.okcoin.house.common.support.enums.CommonConstants;
 import com.okcoin.house.common.support.model.Pager;
+import com.okcoin.house.common.support.model.Pagination;
 import com.okcoin.house.dto.BlogDto;
 import com.okcoin.house.dto.CommentDto;
 import com.okcoin.house.dto.HouseDto;
@@ -41,16 +42,18 @@ public class BlogController {
     public String list(@RequestParam(value = "pageSize", required = false, defaultValue = "10") Integer pageSize,
                        @RequestParam(value = "pageNum", required = false, defaultValue = "1") Integer pageNum,
                        Blog query, ModelMap modelMap) {
-        Pager<BlogDto> ps = blogService.queryBlog(query, pageSize, pageNum);
+        Pager<BlogDto> ps = blogService.queryBlog(query, pageNum, pageSize);
         List<HouseDto> hotHouse = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
+        Pagination pagination = new Pagination(pageSize, pageNum, ps.getTotal());
         modelMap.put("recomHouses", hotHouse);
         modelMap.put("ps", ps);
+        modelMap.put("pager", pagination);
         return "/blog/listing";
     }
 
     @GetMapping(value = "/detail")
     public String blogDetail(@RequestParam("id") Long id, ModelMap modelMap) {
-        Blog blog = blogService.queryOneBlog(id);
+        BlogDto blog = blogService.queryOneBlog(id);
         List<CommentDto> blogComments = commentService.getBlogComments(id, 8);
         List<HouseDto> hotHouse = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
         modelMap.put("recomHouses", hotHouse);

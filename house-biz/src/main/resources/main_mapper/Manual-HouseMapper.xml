@@ -58,11 +58,11 @@
             </if>
             <if test="name != null and name != '' ">
                 <bind name="pattern" value="'%' + name + '%'"/>
-                and name like #{pattern}
+                <!--and name like #{pattern}-->
+                and name like CONCAT('%',#{name},'%')
             </if>
         </where>
     </select>
-
     <select id="selectPageHouses" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>

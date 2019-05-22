@@ -24,6 +24,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.URL;
 import java.text.MessageFormat;
 import java.util.Date;
 import java.util.Map;
@@ -33,7 +34,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author: liupeng
  * @date: 2019/4/24 18:31
- * @description(功能描述):
+ * @description(功能描述): 用户通知服务
  */
 @Service
 public class NoticService {
@@ -94,7 +95,7 @@ public class NoticService {
         return registerCache.getIfPresent(key);
     }
 
-    private void sendMail(String subject, String email, String text) throws MessagingException, IOException {
+    private void sendMail(String subject, String email, String text) throws MessagingException {
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "utf-8");
         helper.setFrom(from);
@@ -113,8 +114,8 @@ public class NoticService {
 
         //加载邮件html模板
         String fileName = "static/pod-scale-alarm.html";
-        InputStream inputStream = ClassLoader.getSystemResourceAsStream(fileName);
-        BufferedReader fileReader = new BufferedReader(new InputStreamReader(inputStream));
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(fileName);
+        BufferedReader fileReader = new BufferedReader(new InputStreamReader(inputStream, "utf-8"));
         StringBuffer buffer = new StringBuffer();
         String line;
         while ((line = fileReader.readLine()) != null) {
@@ -122,7 +123,7 @@ public class NoticService {
         }
         inputStream.close();
         fileReader.close();
-        String contentText = "欢迎注册,请点击下方链接完成注册,有效期: 15min.<br>welcome to register,Please click the link below to complete registration.<br>" + url;
+        String contentText = "欢迎注册,请点击下方链接完成注册,有效期: 15min.<br>welcome to register,Please click the link below to complete registration.<br><a href=" + url + ">" + url + "</a>";
         //邮件表格header
         //绿色
         String emailHeadColor = "#fa9c10";
@@ -140,8 +141,8 @@ public class NoticService {
 
         //加载邮件html模板
         String fileName = "static/consult-email-template.html";
-        InputStream inputStream = ClassLoader.getSystemResourceAsStream(fileName);
-        BufferedReader fileReader = new BufferedReader(new InputStreamReader(inputStream));
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(fileName);
+        BufferedReader fileReader = new BufferedReader(new InputStreamReader(inputStream, "utf-8"));
         StringBuffer buffer = new StringBuffer();
         String line;
         while ((line = fileReader.readLine()) != null) {
@@ -157,8 +158,8 @@ public class NoticService {
         String date = DateFormatUtils.format(new Date(), "yyyy/MM/dd HH:mm:ss");
         //填充html模板中的参数
         String htmlText = MessageFormat.format(buffer.toString(), emailHeadColor, name, contentText, contentTextVar, date);
-
         //改变表格样式
+        htmlText.getBytes();
         htmlText = htmlText.replaceAll("<td>", "<td style=\"padding:6px 10px; line-height: 150%;\">");
         htmlText = htmlText.replaceAll("<tr>", "<tr style=\"border-bottom: 1px solid #eee; color:#666;\">");
         return htmlText;
