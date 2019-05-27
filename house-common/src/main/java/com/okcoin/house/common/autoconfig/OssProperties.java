@@ -34,7 +34,8 @@ public class OssProperties {
     /**
      * 阿里云API的外网域名
      */
-    private String ENDPOINT = "oss-cn-beijing-internal.aliyuncs.com";
+    private String ENDPOINT_INTERNAL = "oss-cn-beijing-internal.aliyuncs.com";
+    private String ENDPOINT = "oss-cn-beijing.aliyuncs.com";
 
     public String getAccessKeyId() {
         return accessKeyId;
@@ -68,11 +69,15 @@ public class OssProperties {
         this.AVATAR_FOLDER = AVATAR_FOLDER;
     }
 
-    public String getENDPOINT() {
-        return ENDPOINT;
+    public String getENDPOINT_INTERNAL() {
+        return ENDPOINT_INTERNAL;
     }
 
-    public void setENDPOINT(String ENDPOINT) {
-        this.ENDPOINT = ENDPOINT;
+    public void setENDPOINT_INTERNAL(String ENDPOINT_INTERNAL) {
+        this.ENDPOINT_INTERNAL = ENDPOINT_INTERNAL;
+    }
+
+    public String getENDPOINT() {
+        return ENDPOINT;
     }
 }

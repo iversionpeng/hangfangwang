@@ -131,7 +131,7 @@ public class HouseServiceImpl implements HouseService {
         if (CollectionUtils.isNotEmpty(houseDto.getHouseFiles())) {
             fileService.uploadObject2OSS(houseDto.getHouseFiles(), user.getEmail() + FileType.HOUSE_IMG_FILE.getTypeName());
             houseDto.getHouseFiles().forEach(x -> {
-                String picUrl = "https://" + ossProperties.getBucketName() + "." + ossProperties.getENDPOINT() +
+                String picUrl = "https://" + ossProperties.getBucketName() + "." + ossProperties.getENDPOINT()+
                         "/" + ossProperties.getAVATAR_FOLDER() + user.getEmail() + FileType.HOUSE_IMG_FILE.getTypeName() + x.getOriginalFilename();
                 imgs.add(picUrl);
             });
